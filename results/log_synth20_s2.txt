@@ -1,0 +1,1 @@
+{"task": "synth20", "seed": 2, "cfg": {"tag": "perclass", "B": 8, "s": 2.0, "C": 8, "w": 0, "T": null}, "mycel": [0.789, 618], "h8": [0.767, 397]}
