@@ -24,6 +24,23 @@ def grid(family, stream):
         for P, B, s, Tm, M in itertools.product((256, 512, 1024), (8, 12, 16), (1.5, 2.0, 3.0), (1.0, 2.0), (0, 8, 16)):
             out.append(dict(tag="shared", P=P, B=B, s=s, T=int(Tm * P), consolidate=0.0, M=M, grow=int(M > 0)))
         return out
+    if family == "mycel3":
+        # sweep 3: parts, not only knobs. reuse = the answer's fired bitmap is latched for learning (all
+        # learners get the same latch); R = oblique ports; gate = satiation (skip learning when confidently right)
+        out = []
+        for P, B, s, M, R, g in itertools.product((256, 512, 1024), (12, 16, 24), (1.5, 2.0, 3.0), (8, 16), (0, 8), (0.0, 0.5)):
+            out.append(dict(tag="shared", P=P, B=B, s=s, T=P, consolidate=0.0, M=M, grow=1, reuse=1, R=R, gate=g))
+        return out
+    if family == "mlp3":
+        out = []
+        for h, lr, g in itertools.product((64, 128, 256), (0.0003, 0.001, 0.003), (0.0, 0.9)):
+            out += [dict(h=h, lr=lr, reuse=1, gate=g), dict(h=h, lr=lr, replay=1000, k=4, reuse=1, gate=g)]
+        return out
+    if family == "htree3":
+        return [dict(grace=g, delta=d, reuse=1, tier=1) for g in (20, 50, 200) for d in (1e-2, 1e-3, 1e-7)]
+    if family == "river3":
+        return ([dict(model="hat", grace_period=g, reuse=1, tier=1) for g in (50, 200)] +
+                [dict(model="arf", n_models=n, reuse=1, tier=1) for n in (5, 10, 20)])
     # sweep 2 for baselines too: beyond the edges their best sweep-1 settings touched
     if family == "mlp2":
         out = []

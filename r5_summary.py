@@ -30,6 +30,11 @@ def wins(m, b):
     return (m["acc"] >= b["acc"] - 0.01 and m["E"] <= 0.5 * b["E"]) or (m["acc"] >= b["acc"] + 0.02 and m["E"] <= b["E"])
 
 
+def dominated(m, others):
+    """Sweep 3 rule (harsher): no selected baseline may be both at least as accurate and cheaper."""
+    return any(o["acc"] >= m["acc"] and o["E"] < m["E"] for o in others)
+
+
 def main():
     rows = load(sys.argv[1]); out_path = sys.argv[2]
     streams = sorted({k[0] for k in rows}); fams = sorted({k[1] for k in rows})
@@ -42,10 +47,11 @@ def main():
             if fam == "mycel" or not full:
                 continue
             frozen[fam] = max(full, key=lambda c: np.mean([rows[(st, fam, c)]["acc"] for st in streams]))
-        best_b = {st: max((rows[(st, f, c)] | dict(fam=f) for f, c in frozen.items() if f != "majority"), key=lambda r: r["acc"]) for st in streams}
+        best_b = {st: max((rows[(st, f, c)] | dict(fam=f) for f, c in frozen.items()), key=lambda r: r["acc"]) for st in streams}
         cands = [c for c in {k[2] for k in rows if k[1] == "mycel"} if all((st, "mycel", c) in rows for st in streams)]
+        sel = {st: [rows[(st, f, c)] for f, c in frozen.items() if f != "majority" and (st, f, c) in rows] for st in streams}
         def score(c):
-            w = sum(wins(rows[(st, "mycel", c)], best_b[st]) for st in streams)
+            w = sum(wins(rows[(st, "mycel", c)], best_b[st]) and not dominated(rows[(st, "mycel", c)], sel[st]) for st in streams)
             return (w, np.mean([rows[(st, "mycel", c)]["acc"] for st in streams]))
         ranked = sorted(cands, key=score, reverse=True)
         frozen["mycel"] = ranked[0]
@@ -61,8 +67,11 @@ def main():
     for st in streams:
         base = {f: r for f, r in table[st].items() if f not in ("mycel", "majority")}
         if "mycel" not in table[st] or not base: continue
-        b = max(base.values(), key=lambda r: r["acc"])
-        verdict[st] = dict(win=bool(wins(table[st]["mycel"], b)), best_baseline=[f for f, r in base.items() if r is b][0])
+        b = max(base.values(), key=lambda r: r["acc"]); m = table[st]["mycel"]
+        dom = [f for f, r in base.items() if r["acc"] >= m["acc"] and r["E"] < m["E"]]
+        anycfg = sum(1 for (s2, f, c), r in rows.items() if s2 == st and f not in ("mycel", "majority") and r["acc"] >= m["acc"] and r["E"] < m["E"])
+        verdict[st] = dict(win=bool(wins(m, b)) and not dom, win_rule=bool(wins(m, b)), dominated_by=dom,
+                           any_baseline_cfg_dominating=anycfg, best_baseline=[f for f, r in base.items() if r is b][0])
     res = dict(frozen={f: json.loads(c) for f, c in frozen.items()}, table=table, verdict=verdict, mycel_top=top,
                mycel_most_accurate=json.loads(most_acc) if most_acc else None, n_configs={f: len({k[2] for k in rows if k[1] == f}) for f in fams})
     json.dump(res, open(out_path, "w"), indent=1)

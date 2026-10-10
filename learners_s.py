@@ -22,13 +22,17 @@ class Base:
 # ------------------------------------------------------------------ Mycel
 class OnlineMycel(Base):
     def __init__(self, K, tag="shared", P=64, C=8, B=4, s=4.0, T=None, w=0, consolidate=0.0, grow=0, seed=0,
-                 price_every=500, bmode=0, M=0):
+                 price_every=500, bmode=0, M=0, reuse=0, gate=0.0, R=0):
         self.cfg = dict(tag=tag, P=P, C=C, B=B, s=s, T=T, w=w, consolidate=consolidate, grow=grow, bmode=bmode, M=M)
+        if reuse: self.cfg["reuse"] = reuse
+        if gate: self.cfg["gate"] = gate
+        if R: self.cfg["R"] = R
+        self.reuse, self.gate = reuse, gate
         self.bx, self.by = [], []
         if tag == "shared":
-            self.m = MycelCo(K, P=P, B=B, s=s, T=T, epochs=1, seed=seed, M=M, grow=grow)
+            self.m = MycelCo(K, P=P, B=B, s=s, T=T, epochs=1, seed=seed, M=M, grow=grow, R=R)
         else:
-            self.m = MycelD(K, C=C, B=B, s=s, T=T, weighted=w, epochs=1, seed=seed, M=M, grow=grow)
+            self.m = MycelD(K, C=C, B=B, s=s, T=T, weighted=w, epochs=1, seed=seed, M=M, grow=grow, R=R)
         self.K, self.price_every, self.seed = K, price_every, seed
         self.recent = []; self._ans_cost = None; self.answer_pJ = 0.0; self.update_pJ = 0.0
 
@@ -52,11 +56,17 @@ class OnlineMycel(Base):
         if self._ans_cost is None or len(self.recent) >= self.price_every:
             R = np.array(self.recent[-200:]); m.votes(R); self._ans_cost = m.energy(); self.recent = []
         self.answer_pJ += self._ans_cost; self.n_ans += 1
-        v = out[0]
+        v = out[0]; self._v = v.copy()
         return int(np.flatnonzero(v == v.max())[0])
 
     def learn(self, x, y):
         m = self.m; self.y1[0] = y
+        if self.gate:                                                    # satiation: a confident right answer teaches nothing
+            v = self._v; T = m.T if getattr(m, "T", None) else 1
+            mo = np.delete(v, y).max() if len(v) > 1 else 0
+            self.update_pJ += 0.1 * self.K
+            if v[y] - mo >= self.gate * T:
+                self.n_upd += 1; return
         _lib.d_reset_counters()
         if isinstance(m, MycelCo):
             _lib.co_epoch(1, m.K, m.P, m.M, m.W, m.L, PTR(m.lit), PTR(m.cnt), PTR(m.inc), PTR(m.has), PTR(m.alive),
@@ -70,7 +80,11 @@ class OnlineMycel(Base):
         ev, vi, bu = (float(v) for v in self.cnt_buf)
         tier_m = cache_read_pJ(m.inc.size * 64)                         # masks read while learning
         tier_s = cache_read_pJ(m.cnt.size * 8 * 4)                      # training state: slot, counter, freeze bytes
-        self.update_pJ += ev * (tier_m * m.W + 0.2 * m.W) + vi * (tier_s * 5 / 64 + 0.3) + bu * (tier_s / 64 + 0.1)
+        if self.reuse:                                                   # fired bitmap latched from the answer (same model, same x)
+            nP = m.P if isinstance(m, MycelCo) else m.K * m.C
+            self.update_pJ += 10.0 * np.ceil(nP / 64) + vi * (tier_s * 5 / 64 + 0.3) + bu * (tier_s / 64 + 0.1)
+        else:
+            self.update_pJ += ev * (tier_m * m.W + 0.2 * m.W) + vi * (tier_s * 5 / 64 + 0.3) + bu * (tier_s / 64 + 0.1)
         self.n_upd += 1
         if self.cfg.get("bmode"):
             self.bx.append(x); self.by.append(y); self.bx = self.bx[-200:]; self.by = self.by[-200:]
@@ -103,9 +117,12 @@ class OnlineMycel(Base):
 # ------------------------------------------------------------------ networks
 class OnlineMLP(Base):
     """One hidden layer, float32, Adam, one example per step; optional replay buffer and EWC at boundaries."""
-    def __init__(self, K, h=32, lr=0.01, replay=0, k=1, ewc=0.0, seed=0):
+    def __init__(self, K, h=32, lr=0.01, replay=0, k=1, ewc=0.0, seed=0, reuse=0, gate=0.0):
         self.K, self.h, self.lr, self.replay, self.k, self.ewc_lam = K, h, lr, replay, k, ewc
         self.r = np.random.default_rng(seed); self.cfg = dict(h=h, lr=lr, replay=replay, k=k, ewc=ewc)
+        if reuse: self.cfg["reuse"] = reuse
+        if gate: self.cfg["gate"] = gate
+        self.reuse, self.gate = reuse, gate
         self.buf_x, self.buf_y, self.seen = [], [], 0
         self.answer_pJ = 0.0; self.update_pJ = 0.0; self.anchor = None; self.recentx, self.recenty = [], []
 
@@ -126,7 +143,8 @@ class OnlineMLP(Base):
 
     def answer(self, x):
         self.answer_pJ += self.ans_cost; self.n_ans += 1
-        return int(np.argmax(self._fwd(x.astype(np.float32))[2]))
+        z = self._fwd(x.astype(np.float32))[2]; self._z = z
+        return int(np.argmax(z))
 
     def _step(self, X, Y):
         a, hd, z = self._fwd(X); z = z - z.max(1, keepdims=True); p = np.exp(z); p /= p.sum(1, keepdims=True)
@@ -145,12 +163,17 @@ class OnlineMLP(Base):
         return n * (3 * self.fwd * FMAC) + self.nparam * 10 * 0.9 + self.tier * self.nparam * 32 * 6 / 64
 
     def learn(self, x, y):
+        if self.gate:                                                    # same satiation rule: skip if p(y) >= gate
+            z = self._z - self._z.max(); p = np.exp(z); p /= p.sum(); self.update_pJ += self.K * 2.0
+            if p[y] >= self.gate:
+                self.n_upd += 1; return
         X = [x]; Y = [y]
         if self.replay and self.buf_x:
             idx = self.r.integers(0, len(self.buf_x), min(self.k, len(self.buf_x)))
             X += [self.buf_x[i] for i in idx]; Y += [self.buf_y[i] for i in idx]
             self.update_pJ += len(idx) * cache_read_pJ(self.replay * self.d * 8) * np.ceil(self.d * 8 / 64)
         self.update_pJ += self._step(np.array(X, np.float32), np.array(Y)); self.n_upd += 1
+        if self.reuse: self.update_pJ -= self.fwd * FMAC                 # activations for x latched from the answer
         if self.replay:                                                  # reservoir sampling keeps an even sample of the past
             self.seen += 1
             if len(self.buf_x) < self.replay:
@@ -208,9 +231,11 @@ class WindowKNN(Base):
 class HTree(Base):
     """VFDT with Gaussian class-conditional estimators per feature; a DDM drift detector resets the tree
     (keeping a background tree trained since the warning level, as in common practice)."""
-    def __init__(self, K, grace=200, delta=1e-5, tau=0.05, seed=0, max_depth=20):
+    def __init__(self, K, grace=200, delta=1e-5, tau=0.05, seed=0, max_depth=20, reuse=0, tier=0):
         self.K, self.grace, self.delta, self.tau, self.max_depth = K, grace, delta, tau, max_depth
-        self.cfg = dict(grace=grace, delta=delta)
+        self.cfg = dict(grace=grace, delta=delta); self.reuse = reuse; self.tierfix = tier; self.tw = 10.0
+        if reuse: self.cfg["reuse"] = reuse
+        if tier: self.cfg["tier"] = tier
         self.answer_pJ = 0.0; self.update_pJ = 0.0
 
     def start(self, Xw, K):
@@ -228,7 +253,8 @@ class HTree(Base):
 
     def answer(self, x):
         leaf = self._find(self.root, x); self.n_ans += 1
-        self.answer_pJ += (leaf["depth"] + 1) * 10.1 + 10 * np.ceil(self.d * 8 / 64) + self.K * 0.1
+        if self.tierfix and self.n_ans % 500 == 0: self.tw = cache_read_pJ(self.mem_bits())
+        self.answer_pJ += (leaf["depth"] + 1) * (self.tw + 0.1) + 10 * np.ceil(self.d * 8 / 64) + self.K * 0.1
         self._last = int(leaf["n"].argmax()) if leaf["n"].sum() else 0
         return self._last
 
@@ -236,7 +262,7 @@ class HTree(Base):
         leaf = self._find(root, x)
         n = leaf["n"]; n[y] += 1; dlt = x - leaf["mu"][y]; leaf["mu"][y] += dlt / n[y]; leaf["m2"][y] += dlt * (x - leaf["mu"][y])
         leaf["lo"] = np.minimum(leaf["lo"], x); leaf["hi"] = np.maximum(leaf["hi"], x); leaf["since"] += 1
-        cost = (leaf["depth"] + 1) * 10.1 + self.d * 3 * 2 * 10 / 8 + self.d * 6 * 0.9
+        cost = (leaf["depth"] + 1) * (self.tw + 0.1) + self.d * 3 * 2 * self.tw / 8 + self.d * 6 * 0.9
         if leaf["since"] >= self.grace and leaf["depth"] < self.max_depth and (n > 0).sum() > 1:
             leaf["since"] = 0; cost += self._try_split(leaf)
         return cost
@@ -268,11 +294,15 @@ class HTree(Base):
             leaf["l"] = self._leaf(d0 + 1); leaf["r"] = self._leaf(d0 + 1)
         return cost
 
+    def _depth_of(self, node):
+        return node.get("depth", 0)
+
     def learn(self, x, y):
         # DDM on the error stream
         e = int(self._last != y); self.ddm_n += 1
         self.ddm_p += (e - self.ddm_p) / self.ddm_n; self.ddm_s = np.sqrt(self.ddm_p * (1 - self.ddm_p) / self.ddm_n)
-        cost = self._update(self.root, x, y)
+        d0 = self._find(self.root, x)["depth"] if self.reuse else 0
+        cost = self._update(self.root, x, y) - d0 * (self.tw + 0.1)                    # reuse: path latched from the answer
         if self.ddm_n > 30:
             if self.ddm_p + self.ddm_s < self.ddm_min: self.ddm_min = self.ddm_p + self.ddm_s; self.ddm_smin = self.ddm_s; self.ddm_pmin = self.ddm_p
             lvl = self.ddm_p + self.ddm_s
@@ -315,9 +345,14 @@ def _river():
 class RiverLearner(Base):
     """river's Hoeffding adaptive tree ('hat') or adaptive random forest ('arf'). Energy is priced like our
     Hoeffding tree: per answer, one word read per node on the path, per tree; per update, the path plus
-    the leaf statistics, per tree (an estimate; river runs in Python)."""
-    def __init__(self, K, model="hat", seed=0, **kw):
+    the leaf statistics, per tree (an estimate; river runs in Python).
+    Sweep 3 (tier=1): reads are priced at the memory tier the model's size puts it in (as for every other
+    learner), split attempts are priced (as for our tree), and reuse=1 latches the answer's path."""
+    def __init__(self, K, model="hat", seed=0, tier=0, reuse=0, **kw):
         self.K, self.model, self.kw = K, model, kw; self.cfg = dict(model=model, **kw)
+        if tier: self.cfg["tier"] = tier
+        if reuse: self.cfg["reuse"] = reuse
+        self.tierfix, self.reuse = tier, reuse
         self.answer_pJ = 0.0; self.update_pJ = 0.0; self.seed = seed
 
     def start(self, Xw, K):
@@ -326,25 +361,37 @@ class RiverLearner(Base):
             self.m = rv.tree.HoeffdingAdaptiveTreeClassifier(seed=self.seed, **self.kw); self.trees = 1
         else:
             self.m = rv.forest.ARFClassifier(seed=self.seed, **self.kw); self.trees = self.kw.get("n_models", 10)
-        self.depth = 4
+        self.depth = 4; self.leaves = 1; self.nodes = 1; self.tier = 10.0
+        self.grace = self.kw.get("grace_period", 50 if self.model == "arf" else 200)
 
     def _x(self, x):
         return {i: float(v) for i, v in enumerate(x)}
 
+    def _measure(self):
+        try:
+            ms = self.m.models if hasattr(self.m, "models") else [self.m]
+            self.depth = float(np.mean([t.height for t in ms]))
+            self.leaves = float(np.sum([t.n_leaves for t in ms])); self.nodes = float(np.sum([t.n_nodes for t in ms]))
+        except Exception:
+            pass
+        if self.tierfix:
+            self.tier = cache_read_pJ(self.mem_bits())
+
     def answer(self, x):
         p = self.m.predict_one(self._x(x)); self.n_ans += 1
-        self.answer_pJ += self.trees * (self.depth + 1) * 10.1 + 10 * np.ceil(self.d * 8 / 64)
+        self.answer_pJ += self.trees * (self.depth + 1) * (self.tier + 0.1) + 10 * np.ceil(self.d * 8 / 64)
         return int(p) if p is not None else 0
 
     def learn(self, x, y):
         self.m.learn_one(self._x(x), int(y)); self.n_upd += 1
-        if self.n_upd % 500 == 0:
-            try:
-                ds = [t.height for t in (self.m.models if hasattr(self.m, "models") else [self.m])]
-                self.depth = float(np.mean(ds))
-            except Exception:
-                pass
-        self.update_pJ += self.trees * ((self.depth + 1) * 10.1 + self.d * 3 * 2 * 10 / 8 + self.d * 6 * 0.9)
+        if self.n_upd % 500 == 0 or self.n_upd == 50:
+            self._measure()
+        path = 0 if self.reuse else (self.depth + 1) * (self.tier + 0.1)
+        stats = self.d * 3 * 2 * self.tier / 8 + self.d * 6 * 0.9           # class-y Gaussian stats of each feature, read + write
+        split = (self.d * 10 * self.K * 20 * 0.1) / self.grace if self.tierfix else 0.0
+        self.update_pJ += self.trees * (path + stats + split)
 
     def mem_bits(self):
-        return 0
+        if not self.tierfix:
+            return 0
+        return int(self.leaves * self.K * self.d * 3 * 32 + self.nodes * 64)
