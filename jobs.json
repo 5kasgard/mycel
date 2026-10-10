@@ -1,3 +1,3 @@
 [
- {"id": "compact_r4", "cmd": "compact.py results/results_r4_*.json results_compact_r4_github.json"}
+ {"id": "compact_r4b", "cmd": "compact.py 'results/results_r4_*.json' results_compact_r4_github.json"}
 ]
