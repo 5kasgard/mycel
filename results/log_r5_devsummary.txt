@@ -1,0 +1,3 @@
+hyperplane {'htree': (0.691, 237), 'knn': (0.826, 42374), 'majority': (0.501, 20), 'mlp': (0.865, 76012), 'mycel': (0.852, 120581)} {'win': False, 'best_baseline': 'mlp'}
+sea {'htree': (0.845, 133), 'knn': (0.911, 10888), 'majority': (0.636, 20), 'mlp': (0.915, 23007), 'mycel': (0.899, 29839)} {'win': False, 'best_baseline': 'mlp'}
+splitdigits {'htree': (0.708, 1047), 'knn': (0.984, 753824), 'majority': (0.506, 20), 'mlp': (0.985, 1446667), 'mycel': (0.979, 136130)} {'win': True, 'best_baseline': 'mlp'}
