@@ -23,8 +23,13 @@ void d_seed(uint64_t s) { rs = s * 2654435761ULL + 0x9E3779B97F4A7C15ULL; if (!r
    below 100 = fire when at least that share of open tubes see a 1 (quorum sensing).
    With dual-rail thermometer inputs a quorum nucleus draws a slanted boundary. */
 static int g_q = 100;
+/* work counters, so learning can be priced as well as answering */
+static uint64_t g_eval = 0, g_visit = 0, g_bump = 0;
+void d_counters(uint64_t *out) { out[0] = g_eval; out[1] = g_visit; out[2] = g_bump; }
+void d_reset_counters(void) { g_eval = g_visit = g_bump = 0; }
 void d_set_quorum(int q) { g_q = q; }
 static inline int fire(const uint64_t *inc, const uint64_t *x, int W, int empty_val) {
+    g_eval++;
     if (g_q >= 100) {
         uint64_t any = 0, viol = 0;
         for (int w = 0; w < W; w++) { any |= inc[w]; viol |= inc[w] & ~x[w]; }
@@ -64,6 +69,7 @@ static inline int get_bit(const uint64_t *m, int b) { return (m[b >> 6] >> (b & 
 /* bump a tube counter by d (+1/-1), keep mask in step */
 static inline void bump(uint8_t *cnt, uint64_t *inc, int lit, int d) {
     int old = *cnt, nw = old + d;
+    g_bump++;
     if (nw < 0) nw = 0; if (nw > 255) nw = 255;
     *cnt = (uint8_t)nw;
     if ((old >= 128) != (nw >= 128)) set_bit(inc, lit, nw >= 128);
@@ -110,6 +116,7 @@ void d_epoch(int n, int K, int C, int M, int W, int L,
                     if (f) {
                         int nact = -1;   /* lazily gathered active literals not owned yet */
                         for (int m = 0; m < M; m++) {
+                            g_visit++;
                             if (fz[m]) continue;
                             int l = lt[m];
                             if (l != 0xFFFF) {
@@ -119,7 +126,7 @@ void d_epoch(int n, int K, int C, int M, int W, int L,
                             if (grow && (l == 0xFFFF || ct[m] == 0)) {
                                 /* dead tube: regrow toward a literal active now (where the drive is) */
                                 if (nact < 0) {
-                                    nact = 0;
+                                    nact = 0; g_visit += L;   /* scanning the input for regrowth (priced harshly: one slot visit per literal) */
                                     for (int q = 0; q < L && nact < 4096; q++)
                                         if (xb[q] && !get_bit(hs, q)) act[nact++] = q;
                                 }
@@ -133,11 +140,12 @@ void d_epoch(int n, int K, int C, int M, int W, int L,
                         }
                     } else {
                         for (int m = 0; m < M; m++)
-                            if (!fz[m] && lt[m] != 0xFFFF && r32() < p_forget) bump(&ct[m], in, lt[m], -1);
+                            if (++g_visit && !fz[m] && lt[m] != 0xFFFF && r32() < p_forget) bump(&ct[m], in, lt[m], -1);
                     }
                 } else if (f) {
                     /* type II: open a tube on a literal that is 0 now, so this false alarm stops */
                     for (int m = 0; m < M; m++) {
+                        g_visit++;
                         if (fz[m]) continue;
                         int l = lt[m];
                         if (l != 0xFFFF && !xb[l] && ct[m] < 128) bump(&ct[m], in, l, +1);
@@ -243,6 +251,7 @@ void co_epoch(int n, int K, int P_, int M, int W, int L,
                     if (f) {
                         int nact = -1;
                         for (int m = 0; m < M; m++) {
+                            g_visit++;
                             if (fz[m]) continue;
                             int l = lt[m];
                             if (l != 0xFFFF) {
@@ -250,7 +259,7 @@ void co_epoch(int n, int K, int P_, int M, int W, int L,
                                 else if (r32() < p_forget) bump(&ct[m], in, l, -1);
                             }
                             if (grow && (l == 0xFFFF || ct[m] == 0)) {
-                                if (nact < 0) { nact = 0; for (int q = 0; q < L && nact < 4096; q++) if (xb[q] && !get_bit(hs, q)) act[nact++] = q; }
+                                if (nact < 0) { nact = 0; g_visit += L; for (int q = 0; q < L && nact < 4096; q++) if (xb[q] && !get_bit(hs, q)) act[nact++] = q; }
                                 if (nact > 0) {
                                     int k = (int)(r32() % (uint32_t)nact); int nl = act[k]; act[k] = act[--nact];
                                     if (l != 0xFFFF) set_bit(hs, l, 0); set_bit(hs, nl, 1);
@@ -260,10 +269,11 @@ void co_epoch(int n, int K, int P_, int M, int W, int L,
                         }
                     } else {
                         for (int m = 0; m < M; m++)
-                            if (!fz[m] && lt[m] != 0xFFFF && r32() < p_forget) bump(&ct[m], in, lt[m], -1);
+                            if (++g_visit && !fz[m] && lt[m] != 0xFFFF && r32() < p_forget) bump(&ct[m], in, lt[m], -1);
                     }
                 } else if (f) {
                     for (int m = 0; m < M; m++) {
+                        g_visit++;
                         if (fz[m]) continue;
                         int l = lt[m];
                         if (l != 0xFFFF && !xb[l] && ct[m] < 128) bump(&ct[m], in, l, +1);
