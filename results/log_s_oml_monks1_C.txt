@@ -1,0 +1,3 @@
+{"task": "oml_monks1", "variant": "arf20", "seed": 300, "acc": 0.8309352517985612, "pJ_answer": NaN, "pJ_update": 32756.280575539568, "secs": 0.7}
+{"task": "oml_monks1", "variant": "arf20", "seed": 301, "acc": 0.8129496402877698, "pJ_answer": NaN, "pJ_update": 32756.280575539568, "secs": 0.7}
+{"task": "oml_monks1", "variant": "arf20", "seed": 302, "acc": 0.8255395683453237, "pJ_answer": NaN, "pJ_update": 32756.280575539568, "secs": 0.7}

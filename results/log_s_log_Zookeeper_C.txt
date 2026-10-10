@@ -1,0 +1,3 @@
+{"task": "log_Zookeeper", "variant": "arf20", "seed": 300, "acc": 0.8545, "pJ_answer": NaN, "pJ_update": 58679401.6, "secs": 12.0}
+{"task": "log_Zookeeper", "variant": "arf20", "seed": 301, "acc": 0.883, "pJ_answer": NaN, "pJ_update": 58679401.6, "secs": 11.4}
+{"task": "log_Zookeeper", "variant": "arf20", "seed": 302, "acc": 0.866, "pJ_answer": NaN, "pJ_update": 58679401.6, "secs": 11.2}

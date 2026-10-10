@@ -1,0 +1,3 @@
+{"task": "oml_bank", "variant": "arf20", "seed": 300, "acc": 0.8932, "pJ_answer": NaN, "pJ_update": 3151389.6748, "secs": 25.0}
+{"task": "oml_bank", "variant": "arf20", "seed": 301, "acc": 0.8922, "pJ_answer": NaN, "pJ_update": 3151389.6748, "secs": 24.9}
+{"task": "oml_bank", "variant": "arf20", "seed": 302, "acc": 0.8928, "pJ_answer": NaN, "pJ_update": 3151389.6748, "secs": 25.6}

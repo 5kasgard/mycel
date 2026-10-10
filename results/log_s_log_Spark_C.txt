@@ -1,0 +1,3 @@
+{"task": "log_Spark", "variant": "arf20", "seed": 300, "acc": 0.9075, "pJ_answer": NaN, "pJ_update": 56218483.2, "secs": 9.2}
+{"task": "log_Spark", "variant": "arf20", "seed": 301, "acc": 0.9325, "pJ_answer": NaN, "pJ_update": 56218483.2, "secs": 8.4}
+{"task": "log_Spark", "variant": "arf20", "seed": 302, "acc": 0.8685, "pJ_answer": NaN, "pJ_update": 56218483.2, "secs": 8.6}

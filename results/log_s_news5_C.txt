@@ -1,0 +1,3 @@
+{"task": "news5", "variant": "arf20", "seed": 300, "acc": 0.33206349206349206, "pJ_answer": NaN, "pJ_update": 83250460.8, "secs": 50.1}
+{"task": "news5", "variant": "arf20", "seed": 301, "acc": 0.3453968253968254, "pJ_answer": NaN, "pJ_update": 83250460.8, "secs": 48.1}
+{"task": "news5", "variant": "arf20", "seed": 302, "acc": 0.353015873015873, "pJ_answer": NaN, "pJ_update": 83250460.8, "secs": 47.8}

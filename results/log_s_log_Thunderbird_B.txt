@@ -1,0 +1,6 @@
+{"task": "log_Thunderbird", "variant": "hat", "seed": 300, "acc": 0.393, "pJ_answer": 2167337.8474999373, "pJ_update": 215328.0, "secs": 25.7}
+{"task": "log_Thunderbird", "variant": "arf5", "seed": 300, "acc": 0.774, "pJ_answer": NaN, "pJ_update": 16023355.52, "secs": 3.7}
+{"task": "log_Thunderbird", "variant": "hat", "seed": 301, "acc": 0.407, "pJ_answer": 2167337.8474999373, "pJ_update": 215328.0, "secs": 25.7}
+{"task": "log_Thunderbird", "variant": "arf5", "seed": 301, "acc": 0.8235, "pJ_answer": NaN, "pJ_update": 16023355.52, "secs": 3.4}
+{"task": "log_Thunderbird", "variant": "hat", "seed": 302, "acc": 0.4075, "pJ_answer": 2167337.8474999373, "pJ_update": 215328.0, "secs": 25.9}
+{"task": "log_Thunderbird", "variant": "arf5", "seed": 302, "acc": 0.786, "pJ_answer": NaN, "pJ_update": 16023355.52, "secs": 3.8}

@@ -1,0 +1,3 @@
+{"task": "oml_phoneme", "variant": "arf20", "seed": 300, "acc": 0.847520355292376, "pJ_answer": NaN, "pJ_update": 31060.77350111029, "secs": 4.7}
+{"task": "oml_phoneme", "variant": "arf20", "seed": 301, "acc": 0.8480754996299038, "pJ_answer": NaN, "pJ_update": 31060.77350111029, "secs": 4.4}
+{"task": "oml_phoneme", "variant": "arf20", "seed": 302, "acc": 0.844559585492228, "pJ_answer": NaN, "pJ_update": 31060.77350111029, "secs": 4.4}

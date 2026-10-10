@@ -1,0 +1,3 @@
+{"task": "syn_led", "variant": "arf20", "seed": 300, "acc": 0.6877, "pJ_answer": NaN, "pJ_update": 259779.536, "secs": 22.5}
+{"task": "syn_led", "variant": "arf20", "seed": 301, "acc": 0.6753, "pJ_answer": NaN, "pJ_update": 164549.456, "secs": 23.2}
+{"task": "syn_led", "variant": "arf20", "seed": 302, "acc": 0.6667, "pJ_answer": NaN, "pJ_update": 164549.456, "secs": 23.5}

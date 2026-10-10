@@ -1,0 +1,3 @@
+{"task": "log_HDFS", "variant": "arf20", "seed": 300, "acc": 0.8915, "pJ_answer": NaN, "pJ_update": 54741932.16, "secs": 13.0}
+{"task": "log_HDFS", "variant": "arf20", "seed": 301, "acc": 0.86, "pJ_answer": NaN, "pJ_update": 54741932.16, "secs": 12.2}
+{"task": "log_HDFS", "variant": "arf20", "seed": 302, "acc": 0.853, "pJ_answer": NaN, "pJ_update": 54741932.16, "secs": 12.6}

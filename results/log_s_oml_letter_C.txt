@@ -1,0 +1,3 @@
+{"task": "oml_letter", "variant": "arf20", "seed": 300, "acc": 0.6132, "pJ_answer": NaN, "pJ_update": 127066.5664, "secs": 91.1}
+{"task": "oml_letter", "variant": "arf20", "seed": 301, "acc": 0.5927, "pJ_answer": NaN, "pJ_update": 127066.5664, "secs": 90.3}
+{"task": "oml_letter", "variant": "arf20", "seed": 302, "acc": 0.5907, "pJ_answer": NaN, "pJ_update": 127066.5664, "secs": 86.4}

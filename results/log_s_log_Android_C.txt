@@ -1,0 +1,3 @@
+{"task": "log_Android", "variant": "arf20", "seed": 300, "acc": 0.441, "pJ_answer": NaN, "pJ_update": 79351116.16, "secs": 65.2}
+{"task": "log_Android", "variant": "arf20", "seed": 301, "acc": 0.404, "pJ_answer": NaN, "pJ_update": 79351116.16, "secs": 63.9}
+{"task": "log_Android", "variant": "arf20", "seed": 302, "acc": 0.471, "pJ_answer": NaN, "pJ_update": 79351116.16, "secs": 60.6}

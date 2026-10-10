@@ -1,0 +1,3 @@
+{"task": "log_Windows", "variant": "arf20", "seed": 300, "acc": 0.909, "pJ_answer": NaN, "pJ_update": 53757564.8, "secs": 8.5}
+{"task": "log_Windows", "variant": "arf20", "seed": 301, "acc": 0.928, "pJ_answer": NaN, "pJ_update": 53757564.8, "secs": 8.4}
+{"task": "log_Windows", "variant": "arf20", "seed": 302, "acc": 0.9195, "pJ_answer": NaN, "pJ_update": 53757564.8, "secs": 8.2}

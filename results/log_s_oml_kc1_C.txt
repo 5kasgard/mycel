@@ -1,0 +1,3 @@
+{"task": "oml_kc1", "variant": "arf20", "seed": 300, "acc": 0.8525367472735894, "pJ_answer": NaN, "pJ_update": 110169.40256045519, "secs": 4.3}
+{"task": "oml_kc1", "variant": "arf20", "seed": 301, "acc": 0.8501659554291133, "pJ_answer": NaN, "pJ_update": 110169.40256045519, "secs": 4.3}
+{"task": "oml_kc1", "variant": "arf20", "seed": 302, "acc": 0.8496917970602181, "pJ_answer": NaN, "pJ_update": 110169.40256045519, "secs": 4.3}

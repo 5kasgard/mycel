@@ -1,0 +1,3 @@
+{"task": "oml_mushroom", "variant": "arf20", "seed": 300, "acc": 0.9939684884293452, "pJ_answer": NaN, "pJ_update": 1386825.731166913, "secs": 18.0}
+{"task": "oml_mushroom", "variant": "arf20", "seed": 301, "acc": 0.9923682914820285, "pJ_answer": NaN, "pJ_update": 5581330.901033973, "secs": 18.2}
+{"task": "oml_mushroom", "variant": "arf20", "seed": 302, "acc": 0.9924913835548991, "pJ_answer": NaN, "pJ_update": 1911138.8774002953, "secs": 18.4}

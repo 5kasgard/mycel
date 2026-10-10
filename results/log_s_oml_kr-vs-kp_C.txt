@@ -1,0 +1,3 @@
+{"task": "oml_kr-vs-kp", "variant": "arf20", "seed": 300, "acc": 0.9346057571964956, "pJ_answer": NaN, "pJ_update": 3317932.4493116396, "secs": 9.1}
+{"task": "oml_kr-vs-kp", "variant": "arf20", "seed": 301, "acc": 0.9336670838548186, "pJ_answer": NaN, "pJ_update": 458561.7859824781, "secs": 8.7}
+{"task": "oml_kr-vs-kp", "variant": "arf20", "seed": 302, "acc": 0.9277221526908636, "pJ_answer": NaN, "pJ_update": 790498.1564455569, "secs": 8.9}

@@ -1,0 +1,3 @@
+{"task": "oml_phishing", "variant": "arf20", "seed": 300, "acc": 0.9295, "pJ_answer": NaN, "pJ_update": 4175168.1264, "secs": 28.0}
+{"task": "oml_phishing", "variant": "arf20", "seed": 301, "acc": 0.9325, "pJ_answer": NaN, "pJ_update": 4175168.1264, "secs": 28.4}
+{"task": "oml_phishing", "variant": "arf20", "seed": 302, "acc": 0.9328, "pJ_answer": NaN, "pJ_update": 4175168.1264, "secs": 26.8}

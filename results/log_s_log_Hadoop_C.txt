@@ -1,0 +1,3 @@
+{"task": "log_Hadoop", "variant": "arf20", "seed": 300, "acc": 0.8485, "pJ_answer": NaN, "pJ_update": 63109054.72, "secs": 14.7}
+{"task": "log_Hadoop", "variant": "arf20", "seed": 301, "acc": 0.8425, "pJ_answer": NaN, "pJ_update": 63109054.72, "secs": 13.7}
+{"task": "log_Hadoop", "variant": "arf20", "seed": 302, "acc": 0.8325, "pJ_answer": NaN, "pJ_update": 63109054.72, "secs": 14.0}

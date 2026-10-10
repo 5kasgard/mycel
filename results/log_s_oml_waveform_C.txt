@@ -1,0 +1,3 @@
+{"task": "oml_waveform", "variant": "arf20", "seed": 300, "acc": 0.8208, "pJ_answer": NaN, "pJ_update": 1441292.976, "secs": 12.0}
+{"task": "oml_waveform", "variant": "arf20", "seed": 301, "acc": 0.8192, "pJ_answer": NaN, "pJ_update": 1737932.976, "secs": 11.8}
+{"task": "oml_waveform", "variant": "arf20", "seed": 302, "acc": 0.8136, "pJ_answer": NaN, "pJ_update": 1737932.976, "secs": 11.6}

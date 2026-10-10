@@ -1,0 +1,3 @@
+{"task": "oml_electricity", "variant": "arf20", "seed": 300, "acc": 0.8913, "pJ_answer": NaN, "pJ_update": 85349.6712, "secs": 12.6}
+{"task": "oml_electricity", "variant": "arf20", "seed": 301, "acc": 0.895, "pJ_answer": NaN, "pJ_update": 85349.6712, "secs": 12.6}
+{"task": "oml_electricity", "variant": "arf20", "seed": 302, "acc": 0.8886, "pJ_answer": NaN, "pJ_update": 85349.6712, "secs": 13.1}

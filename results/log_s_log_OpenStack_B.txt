@@ -1,0 +1,6 @@
+{"task": "log_OpenStack", "variant": "hat", "seed": 300, "acc": 0.464, "pJ_answer": 2866217.8475000453, "pJ_update": 220768.0, "secs": 33.1}
+{"task": "log_OpenStack", "variant": "arf5", "seed": 300, "acc": 0.537, "pJ_answer": NaN, "pJ_update": 17253814.72, "secs": 13.2}
+{"task": "log_OpenStack", "variant": "hat", "seed": 301, "acc": 0.465, "pJ_answer": 2866217.8475000453, "pJ_update": 220768.0, "secs": 37.9}
+{"task": "log_OpenStack", "variant": "arf5", "seed": 301, "acc": 0.719, "pJ_answer": NaN, "pJ_update": 17253814.72, "secs": 7.0}
+{"task": "log_OpenStack", "variant": "hat", "seed": 302, "acc": 0.4665, "pJ_answer": 2866217.8475000453, "pJ_update": 220768.0, "secs": 52.5}
+{"task": "log_OpenStack", "variant": "arf5", "seed": 302, "acc": 0.536, "pJ_answer": NaN, "pJ_update": 17253814.72, "secs": 10.2}
