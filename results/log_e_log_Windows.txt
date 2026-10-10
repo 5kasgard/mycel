@@ -1,0 +1,6 @@
+{"task": "log_Windows", "variant": "thperc16", "seed": 300, "acc": 0.9885, "pJ_answer": 3029.19275, "pJ_update": 3.59315, "secs": 4.8}
+{"task": "log_Windows", "variant": "thlog", "seed": 300, "acc": 0.982, "pJ_answer": 6528.8763000000545, "pJ_update": 2827.033, "secs": 4.8}
+{"task": "log_Windows", "variant": "thperc16", "seed": 301, "acc": 0.9885, "pJ_answer": 3029.19275, "pJ_update": 3.59315, "secs": 4.9}
+{"task": "log_Windows", "variant": "thlog", "seed": 301, "acc": 0.982, "pJ_answer": 6528.8763000000545, "pJ_update": 2827.033, "secs": 4.8}
+{"task": "log_Windows", "variant": "thperc16", "seed": 302, "acc": 0.9885, "pJ_answer": 3029.19275, "pJ_update": 3.59315, "secs": 4.9}
+{"task": "log_Windows", "variant": "thlog", "seed": 302, "acc": 0.982, "pJ_answer": 6528.8763000000545, "pJ_update": 2827.033, "secs": 4.8}

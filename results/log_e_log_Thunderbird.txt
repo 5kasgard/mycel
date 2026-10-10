@@ -1,0 +1,6 @@
+{"task": "log_Thunderbird", "variant": "thperc16", "seed": 300, "acc": 0.968, "pJ_answer": 10250.928300000052, "pJ_update": 38.982350000002576, "secs": 4.8}
+{"task": "log_Thunderbird", "variant": "thlog", "seed": 300, "acc": 0.918, "pJ_answer": 21829.13919999972, "pJ_update": 32733.60360000059, "secs": 4.8}
+{"task": "log_Thunderbird", "variant": "thperc16", "seed": 301, "acc": 0.968, "pJ_answer": 10250.928300000052, "pJ_update": 38.982350000002576, "secs": 4.8}
+{"task": "log_Thunderbird", "variant": "thlog", "seed": 301, "acc": 0.918, "pJ_answer": 21829.13919999972, "pJ_update": 32733.60360000059, "secs": 4.8}
+{"task": "log_Thunderbird", "variant": "thperc16", "seed": 302, "acc": 0.968, "pJ_answer": 10250.928300000052, "pJ_update": 38.982350000002576, "secs": 4.8}
+{"task": "log_Thunderbird", "variant": "thlog", "seed": 302, "acc": 0.918, "pJ_answer": 21829.13919999972, "pJ_update": 32733.60360000059, "secs": 4.8}

@@ -1,0 +1,6 @@
+{"task": "oml_eeg", "variant": "thperc16", "seed": 300, "acc": 0.6139, "pJ_answer": 615.5808800000531, "pJ_update": 235.19508000004464, "secs": 1.4}
+{"task": "oml_eeg", "variant": "thlog", "seed": 300, "acc": 0.6232, "pJ_answer": 2135.055439999678, "pJ_update": 1748.020959999993, "secs": 1.1}
+{"task": "oml_eeg", "variant": "thperc16", "seed": 301, "acc": 0.6085, "pJ_answer": 621.2634300000545, "pJ_update": 244.00942000004548, "secs": 1.3}
+{"task": "oml_eeg", "variant": "thlog", "seed": 301, "acc": 0.6221, "pJ_answer": 2161.604339999671, "pJ_update": 1780.5935599999991, "secs": 1.1}
+{"task": "oml_eeg", "variant": "thperc16", "seed": 302, "acc": 0.6155, "pJ_answer": 604.2970000000505, "pJ_update": 227.8498200000435, "secs": 1.4}
+{"task": "oml_eeg", "variant": "thlog", "seed": 302, "acc": 0.6313, "pJ_answer": 2082.48599999968, "pJ_update": 1683.5239999999949, "secs": 1.0}

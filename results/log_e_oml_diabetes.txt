@@ -1,0 +1,6 @@
+{"task": "oml_diabetes", "variant": "thperc16", "seed": 300, "acc": 0.6653645833333334, "pJ_answer": 336.2472656249972, "pJ_update": 121.98658854166757, "secs": 0.0}
+{"task": "oml_diabetes", "variant": "thlog", "seed": 300, "acc": 0.70703125, "pJ_answer": 1127.829427083347, "pJ_update": 923.6411458333324, "secs": 0.0}
+{"task": "oml_diabetes", "variant": "thperc16", "seed": 301, "acc": 0.6419270833333334, "pJ_answer": 333.2983072916639, "pJ_update": 128.7141927083348, "secs": 0.0}
+{"task": "oml_diabetes", "variant": "thlog", "seed": 301, "acc": 0.68359375, "pJ_answer": 1113.9460937500137, "pJ_update": 906.6078124999996, "secs": 0.0}
+{"task": "oml_diabetes", "variant": "thperc16", "seed": 302, "acc": 0.6861979166666666, "pJ_answer": 331.94557291666405, "pJ_update": 110.84036458333414, "secs": 0.0}
+{"task": "oml_diabetes", "variant": "thlog", "seed": 302, "acc": 0.70703125, "pJ_answer": 1108.0890625000134, "pJ_update": 899.4218750000003, "secs": 0.0}

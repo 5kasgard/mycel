@@ -1,0 +1,6 @@
+{"task": "log_Hadoop", "variant": "thperc16", "seed": 300, "acc": 0.9645, "pJ_answer": 10877.161249999881, "pJ_update": 47.69134999999732, "secs": 4.8}
+{"task": "log_Hadoop", "variant": "thlog", "seed": 300, "acc": 0.923, "pJ_answer": 23184.449999999222, "pJ_update": 35296.635000000264, "secs": 4.8}
+{"task": "log_Hadoop", "variant": "thperc16", "seed": 301, "acc": 0.9645, "pJ_answer": 10877.161249999881, "pJ_update": 47.69134999999732, "secs": 4.8}
+{"task": "log_Hadoop", "variant": "thlog", "seed": 301, "acc": 0.923, "pJ_answer": 23184.449999999222, "pJ_update": 35296.635000000264, "secs": 4.9}
+{"task": "log_Hadoop", "variant": "thperc16", "seed": 302, "acc": 0.9645, "pJ_answer": 10877.161249999881, "pJ_update": 47.69134999999732, "secs": 4.8}
+{"task": "log_Hadoop", "variant": "thlog", "seed": 302, "acc": 0.923, "pJ_answer": 23184.449999999222, "pJ_update": 35296.635000000264, "secs": 4.8}

@@ -1,0 +1,6 @@
+{"task": "oml_kr-vs-kp", "variant": "thperc16", "seed": 300, "acc": 0.8607634543178974, "pJ_answer": 490.80084480603534, "pJ_update": 50.71260951189361, "secs": 1.1}
+{"task": "oml_kr-vs-kp", "variant": "thlog", "seed": 300, "acc": 0.896433041301627, "pJ_answer": 1405.9010638296675, "pJ_update": 1042.2466833541928, "secs": 1.0}
+{"task": "oml_kr-vs-kp", "variant": "thperc16", "seed": 301, "acc": 0.8482478097622027, "pJ_answer": 480.8928347935018, "pJ_update": 55.247058823532946, "secs": 1.0}
+{"task": "oml_kr-vs-kp", "variant": "thlog", "seed": 301, "acc": 0.8948685857321652, "pJ_answer": 1382.369148936167, "pJ_update": 1013.3755944930732, "secs": 1.0}
+{"task": "oml_kr-vs-kp", "variant": "thperc16", "seed": 302, "acc": 0.8645181476846058, "pJ_answer": 490.80081351692417, "pJ_update": 49.34784105131833, "secs": 1.0}
+{"task": "oml_kr-vs-kp", "variant": "thlog", "seed": 302, "acc": 0.8933041301627034, "pJ_answer": 1405.8936170211568, "pJ_update": 1042.237546933667, "secs": 1.0}

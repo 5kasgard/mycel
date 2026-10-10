@@ -1,0 +1,6 @@
+{"task": "c2_breast-w", "variant": "thperc16", "seed": 400, "acc": 0.9456366237482118, "pJ_answer": 252.4721030042932, "pJ_update": 15.234191702432305, "secs": 0.1}
+{"task": "c2_breast-w", "variant": "thlog", "seed": 400, "acc": 0.9670958512160229, "pJ_answer": 783.9203147353285, "pJ_update": 626.5997138769671, "secs": 0.0}
+{"task": "c2_breast-w", "variant": "thperc16", "seed": 401, "acc": 0.9341917024320457, "pJ_answer": 253.7927038626593, "pJ_update": 18.179971387696984, "secs": 0.1}
+{"task": "c2_breast-w", "variant": "thlog", "seed": 401, "acc": 0.9513590844062947, "pJ_answer": 798.7828326180354, "pJ_update": 632.1974248927054, "secs": 0.0}
+{"task": "c2_breast-w", "variant": "thperc16", "seed": 402, "acc": 0.9341917024320457, "pJ_answer": 227.93934191702462, "pJ_update": 16.968240343347894, "secs": 0.1}
+{"task": "c2_breast-w", "variant": "thlog", "seed": 402, "acc": 0.9542203147353362, "pJ_answer": 733.633762517875, "pJ_update": 602.0783977110156, "secs": 0.0}

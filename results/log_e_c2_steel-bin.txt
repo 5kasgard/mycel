@@ -1,0 +1,6 @@
+{"task": "c2_steel-bin", "variant": "thperc16", "seed": 400, "acc": 0.7372488408037094, "pJ_answer": 1069.6119526017503, "pJ_update": 259.5085007727865, "secs": 0.4}
+{"task": "c2_steel-bin", "variant": "thlog", "seed": 400, "acc": 0.768160741885626, "pJ_answer": 3616.9388459556935, "pJ_update": 2868.8879958784123, "secs": 0.4}
+{"task": "c2_steel-bin", "variant": "thperc16", "seed": 401, "acc": 0.7501287995878413, "pJ_answer": 1075.322823286944, "pJ_update": 248.1876352395555, "secs": 0.4}
+{"task": "c2_steel-bin", "variant": "thlog", "seed": 401, "acc": 0.7691911385883565, "pJ_answer": 3652.4715610511225, "pJ_update": 2899.9684698608994, "secs": 0.4}
+{"task": "c2_steel-bin", "variant": "thperc16", "seed": 402, "acc": 0.7408552292632664, "pJ_answer": 1079.4550747037613, "pJ_update": 262.75378670787103, "secs": 0.4}
+{"task": "c2_steel-bin", "variant": "thlog", "seed": 402, "acc": 0.7686759402369913, "pJ_answer": 3662.981607418853, "pJ_update": 2925.37743431221, "secs": 0.4}

@@ -1,0 +1,6 @@
+{"task": "log_Mac", "variant": "thperc16", "seed": 300, "acc": 0.824, "pJ_answer": 35028.274125, "pJ_update": 224.2443500000002, "secs": 2.6}
+{"task": "log_Mac", "variant": "thlog", "seed": 300, "acc": 0.6, "pJ_answer": 75840.20539999988, "pJ_update": 136924.8195, "secs": 2.6}
+{"task": "log_Mac", "variant": "thperc16", "seed": 301, "acc": 0.824, "pJ_answer": 35028.274125, "pJ_update": 224.2443500000002, "secs": 2.5}
+{"task": "log_Mac", "variant": "thlog", "seed": 301, "acc": 0.6, "pJ_answer": 75840.20539999988, "pJ_update": 136924.8195, "secs": 2.6}
+{"task": "log_Mac", "variant": "thperc16", "seed": 302, "acc": 0.824, "pJ_answer": 35028.274125, "pJ_update": 224.2443500000002, "secs": 2.6}
+{"task": "log_Mac", "variant": "thlog", "seed": 302, "acc": 0.6, "pJ_answer": 75840.20539999988, "pJ_update": 136924.8195, "secs": 2.6}

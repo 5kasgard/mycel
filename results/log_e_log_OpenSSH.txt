@@ -1,0 +1,6 @@
+{"task": "log_OpenSSH", "variant": "thperc16", "seed": 300, "acc": 0.9575, "pJ_answer": 3502.037600000004, "pJ_update": 14.621699999999342, "secs": 2.4}
+{"task": "log_OpenSSH", "variant": "thlog", "seed": 300, "acc": 0.95, "pJ_answer": 16141.635399999857, "pJ_update": 21660.739199999985, "secs": 2.4}
+{"task": "log_OpenSSH", "variant": "thperc16", "seed": 301, "acc": 0.9575, "pJ_answer": 3502.037600000004, "pJ_update": 14.621699999999342, "secs": 2.5}
+{"task": "log_OpenSSH", "variant": "thlog", "seed": 301, "acc": 0.95, "pJ_answer": 16141.635399999857, "pJ_update": 21660.739199999985, "secs": 2.5}
+{"task": "log_OpenSSH", "variant": "thperc16", "seed": 302, "acc": 0.9575, "pJ_answer": 3502.037600000004, "pJ_update": 14.621699999999342, "secs": 2.4}
+{"task": "log_OpenSSH", "variant": "thlog", "seed": 302, "acc": 0.95, "pJ_answer": 16141.635399999857, "pJ_update": 21660.739199999985, "secs": 2.5}

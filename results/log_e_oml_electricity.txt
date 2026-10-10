@@ -1,0 +1,6 @@
+{"task": "oml_electricity", "variant": "thperc16", "seed": 300, "acc": 0.9103, "pJ_answer": 230.11524000001307, "pJ_update": 21.029110000003843, "secs": 0.7}
+{"task": "oml_electricity", "variant": "thlog", "seed": 300, "acc": 0.912, "pJ_answer": 743.8251199998815, "pJ_update": 614.5820799999976, "secs": 0.6}
+{"task": "oml_electricity", "variant": "thperc16", "seed": 301, "acc": 0.9103, "pJ_answer": 230.11524000001307, "pJ_update": 21.029110000003843, "secs": 0.7}
+{"task": "oml_electricity", "variant": "thlog", "seed": 301, "acc": 0.912, "pJ_answer": 743.8251199998815, "pJ_update": 614.5820799999976, "secs": 0.6}
+{"task": "oml_electricity", "variant": "thperc16", "seed": 302, "acc": 0.9103, "pJ_answer": 230.11524000001307, "pJ_update": 21.029110000003843, "secs": 0.7}
+{"task": "oml_electricity", "variant": "thlog", "seed": 302, "acc": 0.912, "pJ_answer": 743.8251199998815, "pJ_update": 614.5820799999976, "secs": 0.6}
