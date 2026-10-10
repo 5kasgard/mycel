@@ -1,0 +1,12 @@
+{"stream": "sea", "family": "htree", "cfg": {"grace": 20, "delta": 0.01}, "seed": 100, "acc": 0.85348, "pJ_answer": 46.990259999994294, "pJ_update": 85.54022400001, "secs": 0.5}
+{"stream": "sea", "family": "htree", "cfg": {"grace": 20, "delta": 0.01}, "seed": 101, "acc": 0.86156, "pJ_answer": 55.72554799999056, "pJ_update": 107.0513199999839, "secs": 0.5}
+{"stream": "sea", "family": "htree", "cfg": {"grace": 20, "delta": 0.01}, "seed": 102, "acc": 0.86772, "pJ_answer": 56.756555999991036, "pJ_update": 92.60433999998381, "secs": 0.5}
+{"stream": "sea", "family": "htree", "cfg": {"grace": 20, "delta": 0.001}, "seed": 100, "acc": 0.84388, "pJ_answer": 47.464959999995834, "pJ_update": 88.26048000001254, "secs": 0.5}
+{"stream": "sea", "family": "htree", "cfg": {"grace": 20, "delta": 0.001}, "seed": 101, "acc": 0.84896, "pJ_answer": 50.1826679999806, "pJ_update": 85.59783599999808, "secs": 0.4}
+{"stream": "sea", "family": "htree", "cfg": {"grace": 20, "delta": 0.001}, "seed": 102, "acc": 0.85004, "pJ_answer": 47.51303599999377, "pJ_update": 85.02537200000455, "secs": 0.5}
+{"stream": "sea", "family": "htree", "cfg": {"grace": 50, "delta": 0.01}, "seed": 100, "acc": 0.85568, "pJ_answer": 54.34144399998453, "pJ_update": 91.02293599997873, "secs": 0.4}
+{"stream": "sea", "family": "htree", "cfg": {"grace": 50, "delta": 0.01}, "seed": 101, "acc": 0.853, "pJ_answer": 48.4297119999914, "pJ_update": 86.976000000001, "secs": 0.4}
+{"stream": "sea", "family": "htree", "cfg": {"grace": 50, "delta": 0.01}, "seed": 102, "acc": 0.85796, "pJ_answer": 50.50101999999776, "pJ_update": 84.20475600000121, "secs": 0.3}
+{"stream": "sea", "family": "htree", "cfg": {"grace": 50, "delta": 0.001}, "seed": 100, "acc": 0.83444, "pJ_answer": 45.93905199999359, "pJ_update": 79.15813200000622, "secs": 0.3}
+{"stream": "sea", "family": "htree", "cfg": {"grace": 50, "delta": 0.001}, "seed": 101, "acc": 0.8476, "pJ_answer": 50.17499199998116, "pJ_update": 82.9379359999903, "secs": 0.3}
+{"stream": "sea", "family": "htree", "cfg": {"grace": 50, "delta": 0.001}, "seed": 102, "acc": 0.85168, "pJ_answer": 50.09338399998013, "pJ_update": 92.19646800000297, "secs": 0.4}

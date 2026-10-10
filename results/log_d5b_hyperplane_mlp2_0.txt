@@ -1,0 +1,18 @@
+{"stream": "hyperplane", "family": "mlp", "cfg": {"h": 64, "lr": 0.0003}, "seed": 100, "acc": 0.77405, "pJ_answer": 7868.0, "pJ_update": 68144.40000000698, "secs": 1.5}
+{"stream": "hyperplane", "family": "mlp", "cfg": {"h": 64, "lr": 0.0003}, "seed": 101, "acc": 0.78925, "pJ_answer": 7868.0, "pJ_update": 68144.40000000698, "secs": 1.5}
+{"stream": "hyperplane", "family": "mlp", "cfg": {"h": 64, "lr": 0.0003}, "seed": 102, "acc": 0.79265, "pJ_answer": 7868.0, "pJ_update": 68144.40000000698, "secs": 1.5}
+{"stream": "hyperplane", "family": "mlp", "cfg": {"h": 64, "lr": 0.0003, "replay": 1000, "k": 4}, "seed": 100, "acc": 0.7516, "pJ_answer": 7868.0, "pJ_update": 110732.6808, "secs": 1.9}
+{"stream": "hyperplane", "family": "mlp", "cfg": {"h": 64, "lr": 0.0003, "replay": 1000, "k": 4}, "seed": 101, "acc": 0.75745, "pJ_answer": 7868.0, "pJ_update": 110732.6808, "secs": 1.9}
+{"stream": "hyperplane", "family": "mlp", "cfg": {"h": 64, "lr": 0.0003, "replay": 1000, "k": 4}, "seed": 102, "acc": 0.7916, "pJ_answer": 7868.0, "pJ_update": 110732.6808, "secs": 1.9}
+{"stream": "hyperplane", "family": "mlp", "cfg": {"h": 64, "lr": 0.001}, "seed": 100, "acc": 0.84, "pJ_answer": 7868.0, "pJ_update": 68144.40000000698, "secs": 1.5}
+{"stream": "hyperplane", "family": "mlp", "cfg": {"h": 64, "lr": 0.001}, "seed": 101, "acc": 0.85735, "pJ_answer": 7868.0, "pJ_update": 68144.40000000698, "secs": 1.5}
+{"stream": "hyperplane", "family": "mlp", "cfg": {"h": 64, "lr": 0.001}, "seed": 102, "acc": 0.854, "pJ_answer": 7868.0, "pJ_update": 68144.40000000698, "secs": 1.5}
+{"stream": "hyperplane", "family": "mlp", "cfg": {"h": 64, "lr": 0.001, "replay": 1000, "k": 4}, "seed": 100, "acc": 0.7789, "pJ_answer": 7868.0, "pJ_update": 110732.6808, "secs": 1.9}
+{"stream": "hyperplane", "family": "mlp", "cfg": {"h": 64, "lr": 0.001, "replay": 1000, "k": 4}, "seed": 101, "acc": 0.7895, "pJ_answer": 7868.0, "pJ_update": 110732.6808, "secs": 1.9}
+{"stream": "hyperplane", "family": "mlp", "cfg": {"h": 64, "lr": 0.001, "replay": 1000, "k": 4}, "seed": 102, "acc": 0.82015, "pJ_answer": 7868.0, "pJ_update": 110732.6808, "secs": 1.9}
+{"stream": "hyperplane", "family": "mlp", "cfg": {"h": 64, "lr": 0.003}, "seed": 100, "acc": 0.8565, "pJ_answer": 7868.0, "pJ_update": 68144.40000000698, "secs": 1.5}
+{"stream": "hyperplane", "family": "mlp", "cfg": {"h": 64, "lr": 0.003}, "seed": 101, "acc": 0.87045, "pJ_answer": 7868.0, "pJ_update": 68144.40000000698, "secs": 1.5}
+{"stream": "hyperplane", "family": "mlp", "cfg": {"h": 64, "lr": 0.003}, "seed": 102, "acc": 0.867, "pJ_answer": 7868.0, "pJ_update": 68144.40000000698, "secs": 1.5}
+{"stream": "hyperplane", "family": "mlp", "cfg": {"h": 64, "lr": 0.003, "replay": 1000, "k": 4}, "seed": 100, "acc": 0.78155, "pJ_answer": 7868.0, "pJ_update": 110732.6808, "secs": 1.9}
+{"stream": "hyperplane", "family": "mlp", "cfg": {"h": 64, "lr": 0.003, "replay": 1000, "k": 4}, "seed": 101, "acc": 0.7895, "pJ_answer": 7868.0, "pJ_update": 110732.6808, "secs": 1.9}
+{"stream": "hyperplane", "family": "mlp", "cfg": {"h": 64, "lr": 0.003, "replay": 1000, "k": 4}, "seed": 102, "acc": 0.8211, "pJ_answer": 7868.0, "pJ_update": 110732.6808, "secs": 1.9}

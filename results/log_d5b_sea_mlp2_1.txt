@@ -1,0 +1,18 @@
+{"stream": "sea", "family": "mlp", "cfg": {"h": 128, "lr": 0.0003}, "seed": 100, "acc": 0.89364, "pJ_answer": 7044.4000000032875, "pJ_update": 61962.0, "secs": 1.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 128, "lr": 0.0003}, "seed": 101, "acc": 0.8868, "pJ_answer": 7044.4000000032875, "pJ_update": 61962.0, "secs": 1.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 128, "lr": 0.0003}, "seed": 102, "acc": 0.89468, "pJ_answer": 7044.4000000032875, "pJ_update": 61962.0, "secs": 1.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 128, "lr": 0.0003, "replay": 1000, "k": 4}, "seed": 100, "acc": 0.88372, "pJ_answer": 7044.4000000032875, "pJ_update": 97336.4632, "secs": 2.2}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 128, "lr": 0.0003, "replay": 1000, "k": 4}, "seed": 101, "acc": 0.88304, "pJ_answer": 7044.4000000032875, "pJ_update": 97336.4632, "secs": 2.2}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 128, "lr": 0.0003, "replay": 1000, "k": 4}, "seed": 102, "acc": 0.8858, "pJ_answer": 7044.4000000032875, "pJ_update": 97336.4632, "secs": 2.1}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 128, "lr": 0.001}, "seed": 100, "acc": 0.90644, "pJ_answer": 7044.4000000032875, "pJ_update": 61962.0, "secs": 1.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 128, "lr": 0.001}, "seed": 101, "acc": 0.90736, "pJ_answer": 7044.4000000032875, "pJ_update": 61962.0, "secs": 1.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 128, "lr": 0.001}, "seed": 102, "acc": 0.91072, "pJ_answer": 7044.4000000032875, "pJ_update": 61962.0, "secs": 1.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 128, "lr": 0.001, "replay": 1000, "k": 4}, "seed": 100, "acc": 0.89412, "pJ_answer": 7044.4000000032875, "pJ_update": 97336.4632, "secs": 2.2}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 128, "lr": 0.001, "replay": 1000, "k": 4}, "seed": 101, "acc": 0.89568, "pJ_answer": 7044.4000000032875, "pJ_update": 97336.4632, "secs": 2.2}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 128, "lr": 0.001, "replay": 1000, "k": 4}, "seed": 102, "acc": 0.89512, "pJ_answer": 7044.4000000032875, "pJ_update": 97336.4632, "secs": 2.2}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 128, "lr": 0.003}, "seed": 100, "acc": 0.9132, "pJ_answer": 7044.4000000032875, "pJ_update": 61962.0, "secs": 2.0}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 128, "lr": 0.003}, "seed": 101, "acc": 0.91572, "pJ_answer": 7044.4000000032875, "pJ_update": 61962.0, "secs": 2.0}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 128, "lr": 0.003}, "seed": 102, "acc": 0.91796, "pJ_answer": 7044.4000000032875, "pJ_update": 61962.0, "secs": 2.0}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 128, "lr": 0.003, "replay": 1000, "k": 4}, "seed": 100, "acc": 0.89496, "pJ_answer": 7044.4000000032875, "pJ_update": 97336.4632, "secs": 2.3}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 128, "lr": 0.003, "replay": 1000, "k": 4}, "seed": 101, "acc": 0.89736, "pJ_answer": 7044.4000000032875, "pJ_update": 97336.4632, "secs": 2.3}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 128, "lr": 0.003, "replay": 1000, "k": 4}, "seed": 102, "acc": 0.89804, "pJ_answer": 7044.4000000032875, "pJ_update": 97336.4632, "secs": 2.3}

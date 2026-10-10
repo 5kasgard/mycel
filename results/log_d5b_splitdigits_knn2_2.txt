@@ -1,0 +1,9 @@
+{"stream": "splitdigits", "family": "knn", "cfg": {"window": 4000, "k": 9}, "seed": 100, "acc": 0.976578073089701, "pJ_answer": 2193364.910299003, "pJ_update": 800.0, "secs": 6.5}
+{"stream": "splitdigits", "family": "knn", "cfg": {"window": 4000, "k": 9}, "seed": 101, "acc": 0.9777408637873755, "pJ_answer": 2193364.910299003, "pJ_update": 800.0, "secs": 1.3}
+{"stream": "splitdigits", "family": "knn", "cfg": {"window": 4000, "k": 9}, "seed": 102, "acc": 0.9775747508305648, "pJ_answer": 2193364.910299003, "pJ_update": 800.0, "secs": 1.3}
+{"stream": "splitdigits", "family": "knn", "cfg": {"window": 4000, "k": 15}, "seed": 100, "acc": 0.9649501661129568, "pJ_answer": 2193364.910299003, "pJ_update": 800.0, "secs": 1.3}
+{"stream": "splitdigits", "family": "knn", "cfg": {"window": 4000, "k": 15}, "seed": 101, "acc": 0.9654485049833887, "pJ_answer": 2193364.910299003, "pJ_update": 800.0, "secs": 1.3}
+{"stream": "splitdigits", "family": "knn", "cfg": {"window": 4000, "k": 15}, "seed": 102, "acc": 0.9636212624584718, "pJ_answer": 2193364.910299003, "pJ_update": 800.0, "secs": 1.3}
+{"stream": "splitdigits", "family": "knn", "cfg": {"window": 4000, "k": 25}, "seed": 100, "acc": 0.9574750830564784, "pJ_answer": 2193364.910299003, "pJ_update": 800.0, "secs": 1.3}
+{"stream": "splitdigits", "family": "knn", "cfg": {"window": 4000, "k": 25}, "seed": 101, "acc": 0.9568106312292359, "pJ_answer": 2193364.910299003, "pJ_update": 800.0, "secs": 1.3}
+{"stream": "splitdigits", "family": "knn", "cfg": {"window": 4000, "k": 25}, "seed": 102, "acc": 0.9556478405315615, "pJ_answer": 2193364.910299003, "pJ_update": 800.0, "secs": 1.3}

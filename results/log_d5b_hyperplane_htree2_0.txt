@@ -1,0 +1,12 @@
+{"stream": "hyperplane", "family": "htree", "cfg": {"grace": 20, "delta": 0.01}, "seed": 100, "acc": 0.67745, "pJ_answer": 53.29163999999848, "pJ_update": 202.6053699999715, "secs": 1.1}
+{"stream": "hyperplane", "family": "htree", "cfg": {"grace": 20, "delta": 0.01}, "seed": 101, "acc": 0.69975, "pJ_answer": 54.75108999998637, "pJ_update": 211.44287999998735, "secs": 1.2}
+{"stream": "hyperplane", "family": "htree", "cfg": {"grace": 20, "delta": 0.01}, "seed": 102, "acc": 0.7169, "pJ_answer": 61.330734999985594, "pJ_update": 196.9624150000009, "secs": 1.1}
+{"stream": "hyperplane", "family": "htree", "cfg": {"grace": 20, "delta": 0.001}, "seed": 100, "acc": 0.68055, "pJ_answer": 48.42394499999684, "pJ_update": 195.47350499995443, "secs": 1.1}
+{"stream": "hyperplane", "family": "htree", "cfg": {"grace": 20, "delta": 0.001}, "seed": 101, "acc": 0.69285, "pJ_answer": 51.63119999999194, "pJ_update": 215.0747099999369, "secs": 1.2}
+{"stream": "hyperplane", "family": "htree", "cfg": {"grace": 20, "delta": 0.001}, "seed": 102, "acc": 0.6983, "pJ_answer": 49.55211499999508, "pJ_update": 193.56960999994672, "secs": 1.1}
+{"stream": "hyperplane", "family": "htree", "cfg": {"grace": 50, "delta": 0.01}, "seed": 100, "acc": 0.6805, "pJ_answer": 52.865419999994245, "pJ_update": 187.8821099999557, "secs": 0.6}
+{"stream": "hyperplane", "family": "htree", "cfg": {"grace": 50, "delta": 0.01}, "seed": 101, "acc": 0.7009, "pJ_answer": 52.12155499998973, "pJ_update": 177.27387999998214, "secs": 0.6}
+{"stream": "hyperplane", "family": "htree", "cfg": {"grace": 50, "delta": 0.01}, "seed": 102, "acc": 0.7164, "pJ_answer": 61.08681999998552, "pJ_update": 184.30891500000018, "secs": 0.6}
+{"stream": "hyperplane", "family": "htree", "cfg": {"grace": 50, "delta": 0.001}, "seed": 100, "acc": 0.6833, "pJ_answer": 48.2668899999975, "pJ_update": 182.80789499995322, "secs": 0.6}
+{"stream": "hyperplane", "family": "htree", "cfg": {"grace": 50, "delta": 0.001}, "seed": 101, "acc": 0.69305, "pJ_answer": 52.08519499999166, "pJ_update": 199.81847999995182, "secs": 0.7}
+{"stream": "hyperplane", "family": "htree", "cfg": {"grace": 50, "delta": 0.001}, "seed": 102, "acc": 0.698, "pJ_answer": 49.20972499999587, "pJ_update": 180.10721999995786, "secs": 0.6}

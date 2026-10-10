@@ -1,0 +1,12 @@
+{"stream": "sea", "family": "river", "cfg": {"model": "hat", "grace_period": 50}, "seed": 100, "acc": 0.88664, "pJ_answer": 66.55999999998829, "pJ_update": 95.2608079999914, "secs": 2.9}
+{"stream": "sea", "family": "river", "cfg": {"model": "hat", "grace_period": 50}, "seed": 101, "acc": 0.8936, "pJ_answer": 63.12599999998549, "pJ_update": 91.82640400001716, "secs": 2.8}
+{"stream": "sea", "family": "river", "cfg": {"model": "hat", "grace_period": 50}, "seed": 102, "acc": 0.89508, "pJ_answer": 62.115999999984595, "pJ_update": 90.81600000000924, "secs": 2.7}
+{"stream": "sea", "family": "river", "cfg": {"model": "hat", "grace_period": 200}, "seed": 100, "acc": 0.8966, "pJ_answer": 55.44999999999041, "pJ_update": 84.14999999998743, "secs": 2.4}
+{"stream": "sea", "family": "river", "cfg": {"model": "hat", "grace_period": 200}, "seed": 101, "acc": 0.886, "pJ_answer": 64.13599999998668, "pJ_update": 92.83680799997836, "secs": 2.6}
+{"stream": "sea", "family": "river", "cfg": {"model": "hat", "grace_period": 200}, "seed": 102, "acc": 0.899, "pJ_answer": 50.60200000001063, "pJ_update": 79.30240400001162, "secs": 2.3}
+{"stream": "sea", "family": "river", "cfg": {"model": "arf", "n_models": 5}, "seed": 100, "acc": 0.91352, "pJ_answer": 569.9440000000599, "pJ_update": 753.4589480000025, "secs": 11.7}
+{"stream": "sea", "family": "river", "cfg": {"model": "arf", "n_models": 5}, "seed": 101, "acc": 0.91384, "pJ_answer": 614.1820000000546, "pJ_update": 797.6945239999039, "secs": 11.9}
+{"stream": "sea", "family": "river", "cfg": {"model": "arf", "n_models": 5}, "seed": 102, "acc": 0.91828, "pJ_answer": 569.944000000034, "pJ_update": 753.4565240000829, "secs": 11.5}
+{"stream": "sea", "family": "river", "cfg": {"model": "arf", "n_models": 10}, "seed": 100, "acc": 0.91624, "pJ_answer": 1150.289999999833, "pJ_update": 1527.3089879997763, "secs": 21.8}
+{"stream": "sea", "family": "river", "cfg": {"model": "arf", "n_models": 10}, "seed": 101, "acc": 0.91936, "pJ_answer": 1149.2799999999484, "pJ_update": 1526.308683999928, "secs": 22.7}
+{"stream": "sea", "family": "river", "cfg": {"model": "arf", "n_models": 10}, "seed": 102, "acc": 0.92212, "pJ_answer": 1163.4199999999416, "pJ_update": 1540.4498959999657, "secs": 22.2}

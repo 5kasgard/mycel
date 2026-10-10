@@ -1,0 +1,12 @@
+{"stream": "splitdigits", "family": "river", "cfg": {"model": "hat", "grace_period": 50}, "seed": 100, "acc": 0.8808970099667774, "pJ_answer": 116.23920265781926, "pJ_update": 861.8392026577566, "secs": 3.0}
+{"stream": "splitdigits", "family": "river", "cfg": {"model": "hat", "grace_period": 50}, "seed": 101, "acc": 0.8906976744186047, "pJ_answer": 123.01727574750544, "pJ_update": 868.620631229209, "secs": 3.2}
+{"stream": "splitdigits", "family": "river", "cfg": {"model": "hat", "grace_period": 50}, "seed": 102, "acc": 0.8931893687707642, "pJ_answer": 126.37275747507462, "pJ_update": 871.9761129568741, "secs": 2.9}
+{"stream": "splitdigits", "family": "river", "cfg": {"model": "hat", "grace_period": 200}, "seed": 100, "acc": 0.8956810631229236, "pJ_answer": 114.52790697675896, "pJ_update": 860.1262292359019, "secs": 2.7}
+{"stream": "splitdigits", "family": "river", "cfg": {"model": "hat", "grace_period": 200}, "seed": 101, "acc": 0.882890365448505, "pJ_answer": 121.33953488372113, "pJ_update": 866.9428903654835, "secs": 2.7}
+{"stream": "splitdigits", "family": "river", "cfg": {"model": "hat", "grace_period": 200}, "seed": 102, "acc": 0.8960132890365449, "pJ_answer": 115.36677740865116, "pJ_update": 860.9650996677859, "secs": 2.8}
+{"stream": "splitdigits", "family": "river", "cfg": {"model": "arf", "n_models": 5}, "seed": 100, "acc": 0.967607973421927, "pJ_answer": 407.4614617940288, "pJ_update": 4455.476561462102, "secs": 3.9}
+{"stream": "splitdigits", "family": "river", "cfg": {"model": "arf", "n_models": 5}, "seed": 101, "acc": 0.9699335548172757, "pJ_answer": 386.25481727575317, "pJ_update": 4434.258172757468, "secs": 3.8}
+{"stream": "splitdigits", "family": "river", "cfg": {"model": "arf", "n_models": 5}, "seed": 102, "acc": 0.9694352159468439, "pJ_answer": 395.4823920265701, "pJ_update": 4443.485747508176, "secs": 3.7}
+{"stream": "splitdigits", "family": "river", "cfg": {"model": "arf", "n_models": 10}, "seed": 100, "acc": 0.981063122923588, "pJ_answer": 737.9428571428623, "pJ_update": 8913.95627906985, "secs": 7.4}
+{"stream": "splitdigits", "family": "river", "cfg": {"model": "arf", "n_models": 10}, "seed": 101, "acc": 0.9794019933554817, "pJ_answer": 746.1637873754336, "pJ_update": 8922.168820598512, "secs": 7.2}
+{"stream": "splitdigits", "family": "river", "cfg": {"model": "arf", "n_models": 10}, "seed": 102, "acc": 0.981063122923588, "pJ_answer": 731.1312292358898, "pJ_update": 8907.139617940695, "secs": 7.4}

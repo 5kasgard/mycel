@@ -1,0 +1,12 @@
+{"stream": "splitdigits", "family": "htree", "cfg": {"grace": 20, "delta": 0.01}, "seed": 100, "acc": 0.7347176079734219, "pJ_answer": 110.80199335547123, "pJ_update": 968.1374086378487, "secs": 1.0}
+{"stream": "splitdigits", "family": "htree", "cfg": {"grace": 20, "delta": 0.01}, "seed": 101, "acc": 0.7004983388704319, "pJ_answer": 111.51167774085299, "pJ_update": 993.1442524917054, "secs": 1.1}
+{"stream": "splitdigits", "family": "htree", "cfg": {"grace": 20, "delta": 0.01}, "seed": 102, "acc": 0.7544850498338871, "pJ_answer": 113.76152823919895, "pJ_update": 1162.0928073089733, "secs": 1.2}
+{"stream": "splitdigits", "family": "htree", "cfg": {"grace": 20, "delta": 0.001}, "seed": 100, "acc": 0.7280730897009967, "pJ_answer": 107.08076411960141, "pJ_update": 957.6121926909818, "secs": 1.0}
+{"stream": "splitdigits", "family": "htree", "cfg": {"grace": 20, "delta": 0.001}, "seed": 101, "acc": 0.7210963455149502, "pJ_answer": 108.31054817275303, "pJ_update": 983.5643853819932, "secs": 1.1}
+{"stream": "splitdigits", "family": "htree", "cfg": {"grace": 20, "delta": 0.001}, "seed": 102, "acc": 0.7224252491694352, "pJ_answer": 111.07210963454176, "pJ_update": 958.5319102989206, "secs": 0.9}
+{"stream": "splitdigits", "family": "htree", "cfg": {"grace": 50, "delta": 0.01}, "seed": 100, "acc": 0.7209302325581395, "pJ_answer": 110.55200996676665, "pJ_update": 901.5485548172563, "secs": 0.5}
+{"stream": "splitdigits", "family": "htree", "cfg": {"grace": 50, "delta": 0.01}, "seed": 101, "acc": 0.6528239202657807, "pJ_answer": 110.06378737540666, "pJ_update": 917.7030066444977, "secs": 0.5}
+{"stream": "splitdigits", "family": "htree", "cfg": {"grace": 50, "delta": 0.01}, "seed": 102, "acc": 0.7488372093023256, "pJ_answer": 112.79347176079244, "pJ_update": 1024.680315614624, "secs": 0.5}
+{"stream": "splitdigits", "family": "htree", "cfg": {"grace": 50, "delta": 0.001}, "seed": 100, "acc": 0.7117940199335548, "pJ_answer": 106.817358803986, "pJ_update": 896.1129069766986, "secs": 0.5}
+{"stream": "splitdigits", "family": "htree", "cfg": {"grace": 50, "delta": 0.001}, "seed": 101, "acc": 0.7126245847176079, "pJ_answer": 109.44805647840055, "pJ_update": 954.7937541527833, "secs": 0.5}
+{"stream": "splitdigits", "family": "htree", "cfg": {"grace": 50, "delta": 0.001}, "seed": 102, "acc": 0.7009966777408638, "pJ_answer": 110.60569767441001, "pJ_update": 964.1593853819846, "secs": 0.5}

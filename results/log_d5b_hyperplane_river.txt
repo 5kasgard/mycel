@@ -1,0 +1,12 @@
+{"stream": "hyperplane", "family": "river", "cfg": {"model": "hat", "grace_period": 50}, "seed": 100, "acc": 0.79245, "pJ_answer": 78.83250000000122, "pJ_update": 187.83401500001258, "secs": 2.6}
+{"stream": "hyperplane", "family": "river", "cfg": {"model": "hat", "grace_period": 50}, "seed": 101, "acc": 0.80805, "pJ_answer": 81.35749999999032, "pJ_update": 190.3590150000008, "secs": 2.6}
+{"stream": "hyperplane", "family": "river", "cfg": {"model": "hat", "grace_period": 50}, "seed": 102, "acc": 0.8155, "pJ_answer": 81.10500000000071, "pJ_update": 190.10651499997334, "secs": 2.5}
+{"stream": "hyperplane", "family": "river", "cfg": {"model": "hat", "grace_period": 200}, "seed": 100, "acc": 0.80185, "pJ_answer": 64.43999999999998, "pJ_update": 173.44000000000253, "secs": 2.1}
+{"stream": "hyperplane", "family": "river", "cfg": {"model": "hat", "grace_period": 200}, "seed": 101, "acc": 0.8469, "pJ_answer": 59.64250000000787, "pJ_update": 168.642499999971, "secs": 2.0}
+{"stream": "hyperplane", "family": "river", "cfg": {"model": "hat", "grace_period": 200}, "seed": 102, "acc": 0.8355, "pJ_answer": 61.15749999998988, "pJ_update": 170.1569949999784, "secs": 2.2}
+{"stream": "hyperplane", "family": "river", "cfg": {"model": "arf", "n_models": 5}, "seed": 100, "acc": 0.75545, "pJ_answer": 650.9974999999835, "pJ_update": 1276.0232550001747, "secs": 8.5}
+{"stream": "hyperplane", "family": "river", "cfg": {"model": "arf", "n_models": 5}, "seed": 101, "acc": 0.77465, "pJ_answer": 674.9850000000353, "pJ_update": 1300.0127750001368, "secs": 9.1}
+{"stream": "hyperplane", "family": "river", "cfg": {"model": "arf", "n_models": 5}, "seed": 102, "acc": 0.76025, "pJ_answer": 715.3849999999818, "pJ_update": 1340.4132799999797, "secs": 9.1}
+{"stream": "hyperplane", "family": "river", "cfg": {"model": "arf", "n_models": 10}, "seed": 100, "acc": 0.7782, "pJ_answer": 1278.9650000000297, "pJ_update": 2549.011964999894, "secs": 16.5}
+{"stream": "hyperplane", "family": "river", "cfg": {"model": "arf", "n_models": 10}, "seed": 101, "acc": 0.7806, "pJ_answer": 1343.100000000122, "pJ_update": 2613.153025000149, "secs": 16.6}
+{"stream": "hyperplane", "family": "river", "cfg": {"model": "arf", "n_models": 10}, "seed": 102, "acc": 0.79325, "pJ_answer": 1362.0374999999412, "pJ_update": 2632.093555000313, "secs": 16.5}
