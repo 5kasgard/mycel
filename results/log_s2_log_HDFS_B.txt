@@ -1,0 +1,6 @@
+{"task": "log_HDFS", "variant": "hat", "seed": 300, "acc": 0.14, "pJ_answer": 839466.0999999763, "pJ_update": 204992.0, "secs": 7.0}
+{"task": "log_HDFS", "variant": "arf5", "seed": 300, "acc": 0.794, "pJ_answer": 37602209.27999933, "pJ_update": 10483591.2, "secs": 3.4}
+{"task": "log_HDFS", "variant": "hat", "seed": 301, "acc": 0.1445, "pJ_answer": 839466.0999999763, "pJ_update": 204992.0, "secs": 7.3}
+{"task": "log_HDFS", "variant": "arf5", "seed": 301, "acc": 0.526, "pJ_answer": 4194150.194999867, "pJ_update": 1122900.0, "secs": 3.4}
+{"task": "log_HDFS", "variant": "hat", "seed": 302, "acc": 0.1505, "pJ_answer": 839466.0999999763, "pJ_update": 204992.0, "secs": 7.2}
+{"task": "log_HDFS", "variant": "arf5", "seed": 302, "acc": 0.6915, "pJ_answer": 38754197.159998864, "pJ_update": 10799700.0, "secs": 3.3}

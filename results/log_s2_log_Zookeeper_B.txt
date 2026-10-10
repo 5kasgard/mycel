@@ -1,0 +1,6 @@
+{"task": "log_Zookeeper", "variant": "hat", "seed": 300, "acc": 0.153, "pJ_answer": 1398570.0999999477, "pJ_update": 209344.0, "secs": 12.3}
+{"task": "log_Zookeeper", "variant": "arf5", "seed": 300, "acc": 0.7585, "pJ_answer": 81869752.50999744, "pJ_update": 14695252.0, "secs": 3.3}
+{"task": "log_Zookeeper", "variant": "hat", "seed": 301, "acc": 0.153, "pJ_answer": 1398570.0999999477, "pJ_update": 209344.0, "secs": 12.6}
+{"task": "log_Zookeeper", "variant": "arf5", "seed": 301, "acc": 0.577, "pJ_answer": 81869705.29250085, "pJ_update": 14688340.0, "secs": 4.2}
+{"task": "log_Zookeeper", "variant": "hat", "seed": 302, "acc": 0.146, "pJ_answer": 1398570.0999999477, "pJ_update": 209344.0, "secs": 12.2}
+{"task": "log_Zookeeper", "variant": "arf5", "seed": 302, "acc": 0.8235, "pJ_answer": 81869780.03250004, "pJ_update": 14695252.0, "secs": 3.2}

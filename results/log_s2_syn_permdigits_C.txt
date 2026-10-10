@@ -1,0 +1,3 @@
+{"task": "syn_permdigits", "variant": "arf20", "seed": 300, "acc": 0.8397, "pJ_answer": 2934431.3549998365, "pJ_update": 947408.0, "secs": 49.1}
+{"task": "syn_permdigits", "variant": "arf20", "seed": 301, "acc": 0.8314, "pJ_answer": 1398416.2049999824, "pJ_update": 441034.88, "secs": 49.6}
+{"task": "syn_permdigits", "variant": "arf20", "seed": 302, "acc": 0.8363, "pJ_answer": 1398433.3749999795, "pJ_update": 440528.0, "secs": 50.4}

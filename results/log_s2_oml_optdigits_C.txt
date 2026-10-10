@@ -1,0 +1,3 @@
+{"task": "oml_optdigits", "variant": "arf20", "seed": 300, "acc": 0.8779359430604983, "pJ_answer": 9925838.919572767, "pJ_update": 3255425.6512455516, "secs": 19.3}
+{"task": "oml_optdigits", "variant": "arf20", "seed": 301, "acc": 0.8695729537366548, "pJ_answer": 4131521.9213523567, "pJ_update": 1342449.7081850534, "secs": 19.5}
+{"task": "oml_optdigits", "variant": "arf20", "seed": 302, "acc": 0.8645907473309609, "pJ_answer": 1726388.8476867438, "pJ_update": 549660.5266903915, "secs": 20.0}

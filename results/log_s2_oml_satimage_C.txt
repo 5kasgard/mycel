@@ -1,0 +1,3 @@
+{"task": "oml_satimage", "variant": "arf20", "seed": 300, "acc": 0.8555209953343701, "pJ_answer": 472852.0024883039, "pJ_update": 238040.0, "secs": 26.1}
+{"task": "oml_satimage", "variant": "arf20", "seed": 301, "acc": 0.8541213063763609, "pJ_answer": 472829.2735614374, "pJ_update": 238040.0, "secs": 28.5}
+{"task": "oml_satimage", "variant": "arf20", "seed": 302, "acc": 0.8482115085536548, "pJ_answer": 472670.01399687416, "pJ_update": 238040.0, "secs": 27.0}

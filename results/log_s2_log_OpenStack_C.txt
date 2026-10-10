@@ -1,0 +1,3 @@
+{"task": "log_OpenStack", "variant": "arf20", "seed": 300, "acc": 0.6, "pJ_answer": 687069741.4874939, "pJ_update": 70726480.0, "secs": 33.0}
+{"task": "log_OpenStack", "variant": "arf20", "seed": 301, "acc": 0.597, "pJ_answer": 687069802.3400095, "pJ_update": 70726480.0, "secs": 32.3}
+{"task": "log_OpenStack", "variant": "arf20", "seed": 302, "acc": 0.5285, "pJ_answer": 687069599.8350059, "pJ_update": 70726480.0, "secs": 35.0}

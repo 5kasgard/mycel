@@ -1,0 +1,3 @@
+{"task": "log_HealthApp", "variant": "arf20", "seed": 300, "acc": 0.796, "pJ_answer": 435703074.0900082, "pJ_update": 63161680.0, "secs": 9.2}
+{"task": "log_HealthApp", "variant": "arf20", "seed": 301, "acc": 0.8575, "pJ_answer": 435703196.5524785, "pJ_update": 63161680.0, "secs": 9.8}
+{"task": "log_HealthApp", "variant": "arf20", "seed": 302, "acc": 0.794, "pJ_answer": 435703104.389996, "pJ_update": 63161680.0, "secs": 9.5}

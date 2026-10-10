@@ -1,0 +1,6 @@
+{"task": "log_Apache", "variant": "hat", "seed": 300, "acc": 0.414, "pJ_answer": 420138.1000000149, "pJ_update": 201728.0, "secs": 3.2}
+{"task": "log_Apache", "variant": "arf5", "seed": 300, "acc": 0.892, "pJ_answer": 2097525.5974999336, "pJ_update": 1057620.0, "secs": 1.9}
+{"task": "log_Apache", "variant": "hat", "seed": 301, "acc": 0.4165, "pJ_answer": 420138.1000000149, "pJ_update": 201728.0, "secs": 3.3}
+{"task": "log_Apache", "variant": "arf5", "seed": 301, "acc": 0.9675, "pJ_answer": 2097532.6674999595, "pJ_update": 1057620.0, "secs": 2.1}
+{"task": "log_Apache", "variant": "hat", "seed": 302, "acc": 0.415, "pJ_answer": 420138.1000000149, "pJ_update": 201728.0, "secs": 3.4}
+{"task": "log_Apache", "variant": "arf5", "seed": 302, "acc": 0.9705, "pJ_answer": 2097520.2950000614, "pJ_update": 1057620.0, "secs": 1.9}

@@ -1,0 +1,3 @@
+{"task": "log_Mac", "variant": "arf20", "seed": 300, "acc": 0.249, "pJ_answer": 1759566002.232547, "pJ_update": 103002960.0, "secs": 111.7}
+{"task": "log_Mac", "variant": "arf20", "seed": 301, "acc": 0.263, "pJ_answer": 1759566161.3074067, "pJ_update": 103002960.0, "secs": 102.9}
+{"task": "log_Mac", "variant": "arf20", "seed": 302, "acc": 0.28, "pJ_answer": 1759566069.39749, "pJ_update": 103002960.0, "secs": 103.4}

@@ -1,0 +1,3 @@
+{"task": "oml_tic-tac-toe", "variant": "arf20", "seed": 300, "acc": 0.7306889352818372, "pJ_answer": 73748.7144050096, "pJ_update": 103516.84759916493, "secs": 2.3}
+{"task": "oml_tic-tac-toe", "variant": "arf20", "seed": 301, "acc": 0.7286012526096033, "pJ_answer": 114366.39102296553, "pJ_update": 166362.77661795408, "secs": 2.3}
+{"task": "oml_tic-tac-toe", "variant": "arf20", "seed": 302, "acc": 0.7463465553235908, "pJ_answer": 73691.19290187937, "pJ_update": 103516.84759916493, "secs": 2.4}

@@ -1,0 +1,3 @@
+{"task": "oml_pendigits", "variant": "arf20", "seed": 300, "acc": 0.8897, "pJ_answer": 350304.8649999785, "pJ_update": 110192.0, "secs": 30.0}
+{"task": "oml_pendigits", "variant": "arf20", "seed": 301, "acc": 0.8815, "pJ_answer": 350180.6350000169, "pJ_update": 110192.0, "secs": 30.1}
+{"task": "oml_pendigits", "variant": "arf20", "seed": 302, "acc": 0.8777, "pJ_answer": 350230.1250000024, "pJ_update": 110192.0, "secs": 30.6}

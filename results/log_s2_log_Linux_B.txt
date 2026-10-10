@@ -1,0 +1,6 @@
+{"task": "log_Linux", "variant": "hat", "seed": 300, "acc": 0.4495, "pJ_answer": 1119018.0999999584, "pJ_update": 207168.0, "secs": 8.7}
+{"task": "log_Linux", "variant": "arf5", "seed": 300, "acc": 0.753, "pJ_answer": 65495990.48999798, "pJ_update": 14202221.6, "secs": 3.0}
+{"task": "log_Linux", "variant": "hat", "seed": 301, "acc": 0.4475, "pJ_answer": 1119018.0999999584, "pJ_update": 207168.0, "secs": 9.7}
+{"task": "log_Linux", "variant": "arf5", "seed": 301, "acc": 0.8175, "pJ_answer": 65495998.06500229, "pJ_update": 14202221.6, "secs": 2.9}
+{"task": "log_Linux", "variant": "hat", "seed": 302, "acc": 0.45, "pJ_answer": 1119018.0999999584, "pJ_update": 207168.0, "secs": 9.0}
+{"task": "log_Linux", "variant": "arf5", "seed": 302, "acc": 0.8205, "pJ_answer": 65495969.53249822, "pJ_update": 14202221.6, "secs": 3.2}

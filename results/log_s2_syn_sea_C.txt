@@ -1,0 +1,3 @@
+{"task": "syn_sea", "variant": "arf20", "seed": 300, "acc": 0.9253, "pJ_answer": 17919.082500000615, "pJ_update": 19365.2324, "secs": 18.5}
+{"task": "syn_sea", "variant": "arf20", "seed": 301, "acc": 0.9269, "pJ_answer": 19724.260500000866, "pJ_update": 18550.8324, "secs": 17.0}
+{"task": "syn_sea", "variant": "arf20", "seed": 302, "acc": 0.9213, "pJ_answer": 19084.7330000021, "pJ_update": 17736.4324, "secs": 18.6}

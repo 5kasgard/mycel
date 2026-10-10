@@ -1,0 +1,6 @@
+{"task": "oml_phishing", "variant": "hat", "seed": 300, "acc": 0.873, "pJ_answer": 2731.5000000005207, "pJ_update": 2750.600000000421, "secs": 3.4}
+{"task": "oml_phishing", "variant": "arf5", "seed": 300, "acc": 0.9183, "pJ_answer": 72223.85600000323, "pJ_update": 103561.7436, "secs": 7.0}
+{"task": "oml_phishing", "variant": "hat", "seed": 301, "acc": 0.8699, "pJ_answer": 2800.00500000052, "pJ_update": 2853.315020000384, "secs": 3.0}
+{"task": "oml_phishing", "variant": "arf5", "seed": 301, "acc": 0.9181, "pJ_answer": 72251.81699999979, "pJ_update": 103561.7436, "secs": 7.1}
+{"task": "oml_phishing", "variant": "hat", "seed": 302, "acc": 0.8769, "pJ_answer": 2799.5000000005207, "pJ_update": 2853.315020000384, "secs": 3.6}
+{"task": "oml_phishing", "variant": "arf5", "seed": 302, "acc": 0.9146, "pJ_answer": 72196.53549999827, "pJ_update": 103561.7436, "secs": 7.0}

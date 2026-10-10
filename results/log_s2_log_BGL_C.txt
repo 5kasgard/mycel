@@ -1,0 +1,3 @@
+{"task": "log_BGL", "variant": "arf20", "seed": 300, "acc": 0.739, "pJ_answer": 787616206.547481, "pJ_update": 73752400.0, "secs": 13.7}
+{"task": "log_BGL", "variant": "arf20", "seed": 301, "acc": 0.746, "pJ_answer": 787616130.5449958, "pJ_update": 73752400.0, "secs": 13.9}
+{"task": "log_BGL", "variant": "arf20", "seed": 302, "acc": 0.7135, "pJ_answer": 787616082.822487, "pJ_update": 73752400.0, "secs": 14.4}

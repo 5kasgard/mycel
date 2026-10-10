@@ -1,0 +1,6 @@
+{"task": "log_Android", "variant": "hat", "seed": 300, "acc": 0.092, "pJ_answer": 4333866.100000158, "pJ_update": 232192.0, "secs": 23.5}
+{"task": "log_Android", "variant": "arf5", "seed": 300, "acc": 0.4855, "pJ_answer": 259746240.84250206, "pJ_update": 20329300.0, "secs": 8.6}
+{"task": "log_Android", "variant": "hat", "seed": 301, "acc": 0.1085, "pJ_answer": 4333866.100000158, "pJ_update": 232192.0, "secs": 56.8}
+{"task": "log_Android", "variant": "arf5", "seed": 301, "acc": 0.4305, "pJ_answer": 259746200.69500798, "pJ_update": 20329300.0, "secs": 10.3}
+{"task": "log_Android", "variant": "hat", "seed": 302, "acc": 0.1145, "pJ_answer": 4333866.100000158, "pJ_update": 232192.0, "secs": 58.0}
+{"task": "log_Android", "variant": "arf5", "seed": 302, "acc": 0.5035, "pJ_answer": 259746283.26249412, "pJ_update": 20329300.0, "secs": 9.6}

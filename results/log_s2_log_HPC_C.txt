@@ -1,0 +1,3 @@
+{"task": "log_HPC", "variant": "arf20", "seed": 300, "acc": 0.7745, "pJ_answer": 469218475.1624969, "pJ_update": 64170320.0, "secs": 4.4}
+{"task": "log_HPC", "variant": "arf20", "seed": 301, "acc": 0.816, "pJ_answer": 469218492.3325127, "pJ_update": 64170320.0, "secs": 4.4}
+{"task": "log_HPC", "variant": "arf20", "seed": 302, "acc": 0.822, "pJ_answer": 469218478.9500061, "pJ_update": 64170320.0, "secs": 4.4}

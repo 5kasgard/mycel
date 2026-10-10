@@ -1,0 +1,3 @@
+{"task": "log_Linux", "variant": "arf20", "seed": 300, "acc": 0.828, "pJ_answer": 268125553.3749954, "pJ_update": 58118480.0, "secs": 9.6}
+{"task": "log_Linux", "variant": "arf20", "seed": 301, "acc": 0.858, "pJ_answer": 268125507.1675153, "pJ_update": 58118480.0, "secs": 10.3}
+{"task": "log_Linux", "variant": "arf20", "seed": 302, "acc": 0.832, "pJ_answer": 268125558.1725052, "pJ_update": 58118480.0, "secs": 9.7}

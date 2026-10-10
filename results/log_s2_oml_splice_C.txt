@@ -1,0 +1,3 @@
+{"task": "oml_splice", "variant": "arf20", "seed": 300, "acc": 0.8724137931034482, "pJ_answer": 19308091.248903126, "pJ_update": 19815624.683385577, "secs": 19.2}
+{"task": "oml_splice", "variant": "arf20", "seed": 301, "acc": 0.8413793103448276, "pJ_answer": 19308441.489969213, "pJ_update": 19815624.683385577, "secs": 20.8}
+{"task": "oml_splice", "variant": "arf20", "seed": 302, "acc": 0.8363636363636363, "pJ_answer": 19308120.97021903, "pJ_update": 19815624.683385577, "secs": 19.2}

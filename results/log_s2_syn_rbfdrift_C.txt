@@ -1,0 +1,3 @@
+{"task": "syn_rbfdrift", "variant": "arf20", "seed": 300, "acc": 0.9626, "pJ_answer": 57442.094999997316, "pJ_update": 60711.508, "secs": 11.8}
+{"task": "syn_rbfdrift", "variant": "arf20", "seed": 301, "acc": 0.9574, "pJ_answer": 56086.35850000131, "pJ_update": 60711.508, "secs": 10.8}
+{"task": "syn_rbfdrift", "variant": "arf20", "seed": 302, "acc": 0.9602, "pJ_answer": 56880.64900000335, "pJ_update": 60986.908, "secs": 10.6}

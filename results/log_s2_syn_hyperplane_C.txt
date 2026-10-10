@@ -1,0 +1,3 @@
+{"task": "syn_hyperplane", "variant": "arf20", "seed": 300, "acc": 0.8041, "pJ_answer": 56511.317499997975, "pJ_update": 60986.908, "secs": 22.6}
+{"task": "syn_hyperplane", "variant": "arf20", "seed": 301, "acc": 0.8037, "pJ_answer": 56909.46700000027, "pJ_update": 60986.908, "secs": 21.4}
+{"task": "syn_hyperplane", "variant": "arf20", "seed": 302, "acc": 0.8172, "pJ_answer": 56492.54249999934, "pJ_update": 60986.908, "secs": 21.7}

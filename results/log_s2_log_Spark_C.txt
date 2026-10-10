@@ -1,0 +1,3 @@
+{"task": "log_Spark", "variant": "arf20", "seed": 300, "acc": 0.9075, "pJ_answer": 251367824.93749085, "pJ_update": 57614160.0, "secs": 16.1}
+{"task": "log_Spark", "variant": "arf20", "seed": 301, "acc": 0.9325, "pJ_answer": 251367777.72000992, "pJ_update": 57614160.0, "secs": 15.4}
+{"task": "log_Spark", "variant": "arf20", "seed": 302, "acc": 0.8685, "pJ_answer": 251367704.7474991, "pJ_update": 57614160.0, "secs": 16.2}

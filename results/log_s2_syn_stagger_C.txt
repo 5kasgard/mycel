@@ -1,0 +1,3 @@
+{"task": "syn_stagger", "variant": "arf20", "seed": 300, "acc": 0.9951, "pJ_answer": 11182.220000000494, "pJ_update": 13173.1708, "secs": 6.6}
+{"task": "syn_stagger", "variant": "arf20", "seed": 301, "acc": 0.9961, "pJ_answer": 11225.953000000125, "pJ_update": 13173.1708, "secs": 6.6}
+{"task": "syn_stagger", "variant": "arf20", "seed": 302, "acc": 0.9959, "pJ_answer": 11162.87849999841, "pJ_update": 13173.1708, "secs": 6.3}

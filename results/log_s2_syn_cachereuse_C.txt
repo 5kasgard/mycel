@@ -1,0 +1,3 @@
+{"task": "syn_cachereuse", "variant": "arf20", "seed": 300, "acc": 0.8878, "pJ_answer": 1189364.1175000228, "pJ_update": 1793499.8016, "secs": 13.8}
+{"task": "syn_cachereuse", "variant": "arf20", "seed": 301, "acc": 0.9157, "pJ_answer": 785607.9325000348, "pJ_update": 1176603.8016, "secs": 13.2}
+{"task": "syn_cachereuse", "variant": "arf20", "seed": 302, "acc": 0.9179, "pJ_answer": 1998552.0484999518, "pJ_update": 3026880.5376, "secs": 14.7}

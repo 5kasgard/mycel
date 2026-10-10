@@ -1,0 +1,3 @@
+{"task": "oml_electricity", "variant": "arf20", "seed": 300, "acc": 0.8913, "pJ_answer": 61404.63900000307, "pJ_update": 85349.6712, "secs": 12.4}
+{"task": "oml_electricity", "variant": "arf20", "seed": 301, "acc": 0.895, "pJ_answer": 61417.225999996626, "pJ_update": 85349.6712, "secs": 12.4}
+{"task": "oml_electricity", "variant": "arf20", "seed": 302, "acc": 0.8886, "pJ_answer": 62132.5495000011, "pJ_update": 85349.6712, "secs": 12.8}

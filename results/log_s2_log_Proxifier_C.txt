@@ -1,0 +1,3 @@
+{"task": "log_Proxifier", "variant": "arf20", "seed": 300, "acc": 0.9755, "pJ_answer": 117305613.13249823, "pJ_update": 53579600.0, "secs": 4.2}
+{"task": "log_Proxifier", "variant": "arf20", "seed": 301, "acc": 0.975, "pJ_answer": 117305761.09749441, "pJ_update": 53579600.0, "secs": 3.8}
+{"task": "log_Proxifier", "variant": "arf20", "seed": 302, "acc": 0.962, "pJ_answer": 117305643.43249747, "pJ_update": 53579600.0, "secs": 4.1}

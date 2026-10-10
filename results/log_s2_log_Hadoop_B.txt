@@ -1,0 +1,6 @@
+{"task": "log_Hadoop", "variant": "hat", "seed": 300, "acc": 0.24, "pJ_answer": 2027562.0999999344, "pJ_update": 214240.0, "secs": 16.2}
+{"task": "log_Hadoop", "variant": "arf5", "seed": 300, "acc": 0.745, "pJ_answer": 121494662.5149995, "pJ_update": 16168660.0, "secs": 4.1}
+{"task": "log_Hadoop", "variant": "hat", "seed": 301, "acc": 0.2295, "pJ_answer": 2027562.0999999344, "pJ_update": 214240.0, "secs": 19.3}
+{"task": "log_Hadoop", "variant": "arf5", "seed": 301, "acc": 0.724, "pJ_answer": 121494659.48500459, "pJ_update": 16168660.0, "secs": 3.9}
+{"task": "log_Hadoop", "variant": "hat", "seed": 302, "acc": 0.2355, "pJ_answer": 2027562.0999999344, "pJ_update": 214240.0, "secs": 20.0}
+{"task": "log_Hadoop", "variant": "arf5", "seed": 302, "acc": 0.8255, "pJ_answer": 121494682.71500051, "pJ_update": 16168660.0, "secs": 3.8}

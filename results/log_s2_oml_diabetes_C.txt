@@ -1,0 +1,3 @@
+{"task": "oml_diabetes", "variant": "arf20", "seed": 300, "acc": 0.7369791666666666, "pJ_answer": 18814.24843749986, "pJ_update": 25022.625, "secs": 1.4}
+{"task": "oml_diabetes", "variant": "arf20", "seed": 301, "acc": 0.7369791666666666, "pJ_answer": 16905.87109374997, "pJ_update": 22153.875, "secs": 1.4}
+{"task": "oml_diabetes", "variant": "arf20", "seed": 302, "acc": 0.7395833333333334, "pJ_answer": 18840.050781249945, "pJ_update": 25022.625, "secs": 1.4}

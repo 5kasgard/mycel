@@ -1,0 +1,3 @@
+{"task": "log_OpenSSH", "variant": "arf20", "seed": 300, "acc": 0.845, "pJ_answer": 268125448.58749992, "pJ_update": 58118480.0, "secs": 10.9}
+{"task": "log_OpenSSH", "variant": "arf20", "seed": 301, "acc": 0.8195, "pJ_answer": 268125416.51999328, "pJ_update": 58118480.0, "secs": 10.6}
+{"task": "log_OpenSSH", "variant": "arf20", "seed": 302, "acc": 0.806, "pJ_answer": 268125396.57249755, "pJ_update": 58118480.0, "secs": 11.8}

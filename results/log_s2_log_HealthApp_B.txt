@@ -1,0 +1,6 @@
+{"task": "log_HealthApp", "variant": "hat", "seed": 300, "acc": 0.127, "pJ_answer": 1817898.0999999377, "pJ_update": 212608.0, "secs": 15.1}
+{"task": "log_HealthApp", "variant": "arf5", "seed": 300, "acc": 0.5585, "pJ_answer": 106430372.81500249, "pJ_update": 15434797.6, "secs": 5.3}
+{"task": "log_HealthApp", "variant": "hat", "seed": 301, "acc": 0.1195, "pJ_answer": 1817898.0999999377, "pJ_update": 212608.0, "secs": 16.0}
+{"task": "log_HealthApp", "variant": "arf5", "seed": 301, "acc": 0.541, "pJ_answer": 106430370.7950037, "pJ_update": 15434797.6, "secs": 5.2}
+{"task": "log_HealthApp", "variant": "hat", "seed": 302, "acc": 0.1215, "pJ_answer": 1817898.0999999377, "pJ_update": 212608.0, "secs": 16.4}
+{"task": "log_HealthApp", "variant": "arf5", "seed": 302, "acc": 0.585, "pJ_answer": 106430352.86750464, "pJ_update": 15434797.6, "secs": 5.1}
