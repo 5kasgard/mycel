@@ -1,0 +1,3 @@
+{"stream": "splitdigits", "family": "river", "cfg": {"model": "arf", "n_models": 5, "reuse": 1, "tier": 1}, "seed": 100, "acc": 0.967607973421927, "pJ_answer": 3146.7280730897555, "pJ_update": 24372.970099667775, "secs": 3.3}
+{"stream": "splitdigits", "family": "river", "cfg": {"model": "arf", "n_models": 5, "reuse": 1, "tier": 1}, "seed": 101, "acc": 0.9699335548172757, "pJ_answer": 2797.6509966776603, "pJ_update": 22778.285714285714, "secs": 3.2}
+{"stream": "splitdigits", "family": "river", "cfg": {"model": "arf", "n_models": 5, "reuse": 1, "tier": 1}, "seed": 102, "acc": 0.9694352159468439, "pJ_answer": 3023.497342192755, "pJ_update": 24372.970099667775, "secs": 3.2}

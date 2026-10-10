@@ -1,0 +1,3 @@
+{"stream": "hyperplane", "family": "river", "cfg": {"model": "arf", "n_models": 10, "reuse": 1, "tier": 1}, "seed": 100, "acc": 0.7782, "pJ_answer": 12382.010750000436, "pJ_update": 7951.5875, "secs": 12.2}
+{"stream": "hyperplane", "family": "river", "cfg": {"model": "arf", "n_models": 10, "reuse": 1, "tier": 1}, "seed": 101, "acc": 0.7806, "pJ_answer": 13017.191249999556, "pJ_update": 7951.5875, "secs": 12.1}
+{"stream": "hyperplane", "family": "river", "cfg": {"model": "arf", "n_models": 10, "reuse": 1, "tier": 1}, "seed": 102, "acc": 0.79325, "pJ_answer": 13204.196999997863, "pJ_update": 7951.5875, "secs": 11.7}
