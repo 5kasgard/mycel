@@ -7,7 +7,7 @@ from learners_v2 import VARIANTS
 
 WARM, WIN = 200, 500
 GROUPS = {"A": "mycelT,mycelS,mycelA,mycelL,mlp_adam128,mlp_sgd32,logistic,gnb,knn,htree,majority",
-          "B": "hat,arf5", "C": "arf20"}
+          "B": "hat,arf5", "C": "arf20", "D": "perc16"}
 
 
 def traits(S):

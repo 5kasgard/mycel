@@ -75,3 +75,39 @@ def _river_tiers(self):
 
 
 _lv2.River2._tiers = _river_tiers
+
+
+# 4. market scan robustness check (added AFTER the first scan results; only makes Mycel's job harder):
+#    an integer multiclass perceptron, the natural cheap competitor for a multiplier-light learner.
+#    Inputs quantised to int8 (standardised x * 16), weights int16, sparse-aware; learns only on mistakes.
+class Perceptron16(_lv2.Base):
+    def __init__(self, K, seed=0):
+        self.K = K; self.cfg = {}; self.answer_pJ = 0.0; self.update_pJ = 0.0
+
+    def start(self, Xw, K):
+        self.d = Xw.shape[1]; self.mu, self.sd = _lv2._scaler(Xw)
+        self.W = _np.zeros((self.d + 1, K), _np.int32)
+        self.tw = _lv2.cache_read_pJ((self.d + 1) * K * 16)
+        self.binary = _np.all((Xw == 0) | (Xw == 1), axis=0)
+
+    def answer(self, x):
+        q = _np.clip(_np.round((x - self.mu) / self.sd * 16), -127, 127).astype(_np.int32)
+        q = _np.append(q, 16); nz = _np.flatnonzero(q); nb = int((~_np.append(self.binary, True))[nz].sum())
+        s = q[nz] @ self.W[nz]
+        mul = nb * self.K * 0.2                                          # int8 x int16 multiplies (binary inputs need none)
+        self.answer_pJ += self.tw * _lv2.words(len(nz) * self.K * 16) + mul + len(nz) * self.K * 0.05 + 10 * _lv2.words(self.d * 8)
+        self.n_ans += 1; self._c = (q, nz); self._p = int(_np.argmax(s)); return self._p
+
+    def learn(self, x, y):
+        self.n_upd += 1; self.update_pJ += self.K * 0.05
+        if self._p == y: return
+        q, nz = self._c
+        self.W[nz, y] = _np.clip(self.W[nz, y] + q[nz], -32767, 32767)
+        self.W[nz, self._p] = _np.clip(self.W[nz, self._p] - q[nz], -32767, 32767)
+        self.update_pJ += 2 * (self.tw * _lv2.words(len(nz) * 16) * 2 + len(nz) * 0.05)
+
+    def mem_bits(self):
+        return int((self.d + 1) * self.K * 16)
+
+
+_lv2.VARIANTS["perc16"] = (Perceptron16, {})
