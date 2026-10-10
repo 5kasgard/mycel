@@ -15,7 +15,8 @@
 
 static uint64_t rs = 88172645463325252ULL;
 static inline uint64_t xr(void) { rs ^= rs << 13; rs ^= rs >> 7; rs ^= rs << 17; return rs; }
-static inline uint32_t r32(void) { return (uint32_t)(xr() >> 32); }
+static uint64_t g_rng = 0;
+static inline uint32_t r32(void) { g_rng++; return (uint32_t)(xr() >> 32); }
 void d_seed(uint64_t s) { rs = s * 2654435761ULL + 0x9E3779B97F4A7C15ULL; if (!rs) rs = 1; for (int i = 0; i < 10; i++) xr(); }
 
 /* fire(): does nucleus fire on x?  empty_val: what an empty nucleus returns */
@@ -25,8 +26,11 @@ void d_seed(uint64_t s) { rs = s * 2654435761ULL + 0x9E3779B97F4A7C15ULL; if (!r
 static int g_q = 100;
 /* work counters, so learning can be priced as well as answering */
 static uint64_t g_eval = 0, g_visit = 0, g_bump = 0;
+/* energy model v2: weight reads/writes in feedback, mask-bit flips, slot regrowth, regrowth scans */
+static uint64_t g_sel = 0, g_wupd = 0, g_flip = 0, g_regrow = 0, g_scan = 0;
 void d_counters(uint64_t *out) { out[0] = g_eval; out[1] = g_visit; out[2] = g_bump; }
-void d_reset_counters(void) { g_eval = g_visit = g_bump = 0; }
+void d_counters2(uint64_t *out) { out[0] = g_rng; out[1] = g_sel; out[2] = g_wupd; out[3] = g_flip; out[4] = g_regrow; out[5] = g_scan; }
+void d_reset_counters(void) { g_eval = g_visit = g_bump = 0; g_rng = g_sel = g_wupd = g_flip = g_regrow = g_scan = 0; }
 void d_set_quorum(int q) { g_q = q; }
 static inline int fire(const uint64_t *inc, const uint64_t *x, int W, int empty_val) {
     g_eval++;
@@ -72,7 +76,7 @@ static inline void bump(uint8_t *cnt, uint64_t *inc, int lit, int d) {
     g_bump++;
     if (nw < 0) nw = 0; if (nw > 255) nw = 255;
     *cnt = (uint8_t)nw;
-    if ((old >= 128) != (nw >= 128)) set_bit(inc, lit, nw >= 128);
+    if ((old >= 128) != (nw >= 128)) { set_bit(inc, lit, nw >= 128); g_flip++; }
 }
 
 /* One pass over examples in the given order.
@@ -232,12 +236,13 @@ void co_epoch(int n, int K, int P_, int M, int W, int L,
                 if (!alive[j]) continue;
                 if (r32() > Pp) continue;
                 int8_t *wj = &w8[c * P_ + j];
+                g_sel++;
                 int pos = *wj >= 0;
                 int typeI = pass == 0 ? pos : !pos;
                 int f = fired[j];
                 if (f && alive[j] != 2) {           /* weight moves toward the right answer */
-                    if (pass == 0) { if (*wj < 127) (*wj)++; }
-                    else { if (*wj > -127) (*wj)--; }
+                    if (pass == 0) { if (*wj < 127) { (*wj)++; g_wupd++; } }
+                    else { if (*wj > -127) { (*wj)--; g_wupd++; } }
                 }
                 uint64_t *in = inc + (size_t)j * W, *hs = has + (size_t)j * W;
                 uint16_t *lt = lit + (size_t)j * M; uint8_t *ct = cnt + (size_t)j * M;
@@ -259,11 +264,11 @@ void co_epoch(int n, int K, int P_, int M, int W, int L,
                                 else if (r32() < p_forget) bump(&ct[m], in, l, -1);
                             }
                             if (grow && (l == 0xFFFF || ct[m] == 0)) {
-                                if (nact < 0) { nact = 0; g_visit += L; for (int q = 0; q < L && nact < 4096; q++) if (xb[q] && !get_bit(hs, q)) act[nact++] = q; }
+                                if (nact < 0) { nact = 0; g_scan += L; for (int q = 0; q < L && nact < 4096; q++) if (xb[q] && !get_bit(hs, q)) act[nact++] = q; }
                                 if (nact > 0) {
                                     int k = (int)(r32() % (uint32_t)nact); int nl = act[k]; act[k] = act[--nact];
                                     if (l != 0xFFFF) set_bit(hs, l, 0); set_bit(hs, nl, 1);
-                                    lt[m] = (uint16_t)nl; ct[m] = 127;
+                                    lt[m] = (uint16_t)nl; ct[m] = 127; g_regrow++;
                                 }
                             }
                         }
