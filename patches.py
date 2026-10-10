@@ -150,3 +150,9 @@ class _Thermo(_lv2.Base):
 
 _lv2.VARIANTS["thperc16"] = (_Thermo, dict(inner="perc16"))
 _lv2.VARIANTS["thlog"] = (_Thermo, dict(inner="logistic"))
+
+
+# 7. grow-on-demand Mycel (learners_g.py), the design the parts test pointed to.
+import learners_g as _lg
+_lv2.VARIANTS.update(_lg.VARIANTS)
+import scan_tasks3  # noqa  (8. fresh pool for the grow-on-demand test)
