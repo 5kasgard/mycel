@@ -1,0 +1,3 @@
+{"task": "oml_diabetes", "variant": "perc16", "seed": 300, "acc": 0.7005208333333334, "pJ_answer": 62.369531249999135, "pJ_update": 34.583203124999734, "secs": 0.0}
+{"task": "oml_diabetes", "variant": "perc16", "seed": 301, "acc": 0.6940104166666666, "pJ_answer": 62.000390624999135, "pJ_update": 34.37851562499964, "secs": 0.0}
+{"task": "oml_diabetes", "variant": "perc16", "seed": 302, "acc": 0.6848958333333334, "pJ_answer": 62.30052083333246, "pJ_update": 36.054817708332955, "secs": 0.0}

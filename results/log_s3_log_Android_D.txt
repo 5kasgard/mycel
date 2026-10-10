@@ -1,0 +1,3 @@
+{"task": "log_Android", "variant": "perc16", "seed": 300, "acc": 0.9035, "pJ_answer": 17309.180149999942, "pJ_update": 123.2047000000051, "secs": 0.1}
+{"task": "log_Android", "variant": "perc16", "seed": 301, "acc": 0.9035, "pJ_answer": 17309.180149999942, "pJ_update": 123.2047000000051, "secs": 0.1}
+{"task": "log_Android", "variant": "perc16", "seed": 302, "acc": 0.9035, "pJ_answer": 17309.180149999942, "pJ_update": 123.2047000000051, "secs": 0.1}

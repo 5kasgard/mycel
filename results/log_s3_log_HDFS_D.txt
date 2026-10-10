@@ -1,0 +1,3 @@
+{"task": "log_HDFS", "variant": "perc16", "seed": 300, "acc": 0.9875, "pJ_answer": 1397.3341999999816, "pJ_update": 3.331650000000131, "secs": 0.0}
+{"task": "log_HDFS", "variant": "perc16", "seed": 301, "acc": 0.9875, "pJ_answer": 1397.3341999999816, "pJ_update": 3.331650000000131, "secs": 0.0}
+{"task": "log_HDFS", "variant": "perc16", "seed": 302, "acc": 0.9875, "pJ_answer": 1397.3341999999816, "pJ_update": 3.331650000000131, "secs": 0.0}

@@ -1,0 +1,3 @@
+{"task": "oml_bank", "variant": "perc16", "seed": 300, "acc": 0.8607, "pJ_answer": 163.67345, "pJ_update": 27.775730000002728, "secs": 0.2}
+{"task": "oml_bank", "variant": "perc16", "seed": 301, "acc": 0.8612, "pJ_answer": 163.25125, "pJ_update": 27.40617000000361, "secs": 0.2}
+{"task": "oml_bank", "variant": "perc16", "seed": 302, "acc": 0.857, "pJ_answer": 163.3959, "pJ_update": 28.357620000002726, "secs": 0.2}

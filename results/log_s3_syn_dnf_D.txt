@@ -1,0 +1,3 @@
+{"task": "syn_dnf", "variant": "perc16", "seed": 300, "acc": 0.7318, "pJ_answer": 185.69033000000013, "pJ_update": 59.95660999998756, "secs": 0.5}
+{"task": "syn_dnf", "variant": "perc16", "seed": 301, "acc": 0.7203, "pJ_answer": 185.40430999999978, "pJ_update": 62.17442999998849, "secs": 0.4}
+{"task": "syn_dnf", "variant": "perc16", "seed": 302, "acc": 0.7539, "pJ_answer": 185.47510999999943, "pJ_update": 54.84660999998874, "secs": 0.4}

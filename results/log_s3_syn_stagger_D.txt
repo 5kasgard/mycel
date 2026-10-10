@@ -1,0 +1,3 @@
+{"task": "syn_stagger", "variant": "perc16", "seed": 300, "acc": 0.9977, "pJ_answer": 40.40000000000551, "pJ_update": 0.1929199999999658, "secs": 0.4}
+{"task": "syn_stagger", "variant": "perc16", "seed": 301, "acc": 0.9979, "pJ_answer": 40.40000000000551, "pJ_update": 0.184839999999966, "secs": 0.4}
+{"task": "syn_stagger", "variant": "perc16", "seed": 302, "acc": 0.9973, "pJ_answer": 40.40000000000551, "pJ_update": 0.2090799999999659, "secs": 0.3}

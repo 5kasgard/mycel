@@ -1,0 +1,3 @@
+{"task": "oml_pendigits", "variant": "perc16", "seed": 300, "acc": 0.8538, "pJ_answer": 480.78125, "pJ_update": 28.62474000000062, "secs": 0.2}
+{"task": "oml_pendigits", "variant": "perc16", "seed": 301, "acc": 0.8586, "pJ_answer": 482.02575, "pJ_update": 27.83710000000064, "secs": 0.2}
+{"task": "oml_pendigits", "variant": "perc16", "seed": 302, "acc": 0.8586, "pJ_answer": 480.60125, "pJ_update": 27.552220000000634, "secs": 0.2}

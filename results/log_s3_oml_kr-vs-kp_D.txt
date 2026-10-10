@@ -1,0 +1,3 @@
+{"task": "oml_kr-vs-kp", "variant": "perc16", "seed": 300, "acc": 0.8607634543178974, "pJ_answer": 283.58617021276586, "pJ_update": 50.762797246561966, "secs": 0.1}
+{"task": "oml_kr-vs-kp", "variant": "perc16", "seed": 301, "acc": 0.8482478097622027, "pJ_answer": 273.60106382980166, "pJ_update": 55.247371714646846, "secs": 0.1}
+{"task": "oml_kr-vs-kp", "variant": "perc16", "seed": 302, "acc": 0.8626408010012515, "pJ_answer": 283.58297872340415, "pJ_update": 50.0929599499416, "secs": 0.1}

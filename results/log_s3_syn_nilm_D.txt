@@ -1,0 +1,3 @@
+{"task": "syn_nilm", "variant": "perc16", "seed": 300, "acc": 0.8126, "pJ_answer": 107.71514999998647, "pJ_update": 32.60741999999968, "secs": 0.4}
+{"task": "syn_nilm", "variant": "perc16", "seed": 301, "acc": 0.8086, "pJ_answer": 111.43804999999006, "pJ_update": 34.66595999999778, "secs": 0.4}
+{"task": "syn_nilm", "variant": "perc16", "seed": 302, "acc": 0.829, "pJ_answer": 107.78024999998657, "pJ_update": 29.829180000001163, "secs": 0.4}

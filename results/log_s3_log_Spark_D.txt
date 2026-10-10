@@ -1,0 +1,3 @@
+{"task": "log_Spark", "variant": "perc16", "seed": 300, "acc": 0.9855, "pJ_answer": 1611.37225, "pJ_update": 4.688350000000002, "secs": 0.1}
+{"task": "log_Spark", "variant": "perc16", "seed": 301, "acc": 0.9855, "pJ_answer": 1611.37225, "pJ_update": 4.688350000000002, "secs": 0.1}
+{"task": "log_Spark", "variant": "perc16", "seed": 302, "acc": 0.9855, "pJ_answer": 1611.37225, "pJ_update": 4.688350000000002, "secs": 0.1}

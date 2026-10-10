@@ -1,0 +1,3 @@
+{"task": "oml_credit-g", "variant": "perc16", "seed": 300, "acc": 0.673, "pJ_answer": 185.37149999999716, "pJ_update": 67.63139999999909, "secs": 0.0}
+{"task": "oml_credit-g", "variant": "perc16", "seed": 301, "acc": 0.664, "pJ_answer": 185.80949999999712, "pJ_update": 69.81469999999948, "secs": 0.0}
+{"task": "oml_credit-g", "variant": "perc16", "seed": 302, "acc": 0.663, "pJ_answer": 185.91299999999714, "pJ_update": 70.09789999999937, "secs": 0.0}

@@ -1,0 +1,3 @@
+{"task": "log_Zookeeper", "variant": "perc16", "seed": 300, "acc": 0.98, "pJ_answer": 1740.2595, "pJ_update": 5.820999999999998, "secs": 0.1}
+{"task": "log_Zookeeper", "variant": "perc16", "seed": 301, "acc": 0.98, "pJ_answer": 1740.2595, "pJ_update": 5.820999999999998, "secs": 0.1}
+{"task": "log_Zookeeper", "variant": "perc16", "seed": 302, "acc": 0.98, "pJ_answer": 1740.2595, "pJ_update": 5.820999999999998, "secs": 0.1}

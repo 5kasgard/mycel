@@ -1,0 +1,3 @@
+{"task": "oml_vehicle", "variant": "perc16", "seed": 300, "acc": 0.5721040189125296, "pJ_answer": 233.6881796690333, "pJ_update": 86.19515366430142, "secs": 0.0}
+{"task": "oml_vehicle", "variant": "perc16", "seed": 301, "acc": 0.5874704491725768, "pJ_answer": 233.61016548463613, "pJ_update": 83.33274231678357, "secs": 0.0}
+{"task": "oml_vehicle", "variant": "perc16", "seed": 302, "acc": 0.5650118203309693, "pJ_answer": 233.80520094562903, "pJ_update": 87.95992907801298, "secs": 0.0}

@@ -1,0 +1,3 @@
+{"task": "oml_mushroom", "variant": "perc16", "seed": 300, "acc": 0.9894140817331364, "pJ_answer": 262.16947316591984, "pJ_update": 2.6636632200878987, "secs": 0.1}
+{"task": "oml_mushroom", "variant": "perc16", "seed": 301, "acc": 0.9889217134416544, "pJ_answer": 262.16947316592024, "pJ_update": 2.782914820284489, "secs": 0.1}
+{"task": "oml_mushroom", "variant": "perc16", "seed": 302, "acc": 0.9876907927129492, "pJ_answer": 262.16947316591876, "pJ_update": 3.08100689315503, "secs": 0.1}

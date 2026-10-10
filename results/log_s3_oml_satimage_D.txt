@@ -1,0 +1,3 @@
+{"task": "oml_satimage", "variant": "perc16", "seed": 300, "acc": 0.7819595645412131, "pJ_answer": 651.2858475893481, "pJ_update": 83.5188491446277, "secs": 0.1}
+{"task": "oml_satimage", "variant": "perc16", "seed": 301, "acc": 0.7774494556765164, "pJ_answer": 647.5742612751962, "pJ_update": 84.5298133747995, "secs": 0.1}
+{"task": "oml_satimage", "variant": "perc16", "seed": 302, "acc": 0.7863141524105755, "pJ_answer": 659.6662519439345, "pJ_update": 84.48631415240436, "secs": 0.1}
