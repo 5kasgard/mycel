@@ -1,0 +1,5 @@
+FAILED {'model': 'arf', 'n_models': 20, 'reuse': 1, 'tier': 1} 200 ImportError("Using `parser='auto'` with dense data requires pandas to be installed. Alternatively, explicitly set `parser='liac-arff'`.")
+FAILED {'model': 'arf', 'n_models': 20, 'reuse': 1, 'tier': 1} 201 ImportError("Using `parser='auto'` with dense data requires pandas to be installed. Alternatively, explicitly set `parser='liac-arff'`.")
+FAILED {'model': 'arf', 'n_models': 20, 'reuse': 1, 'tier': 1} 202 ImportError("Using `parser='auto'` with dense data requires pandas to be installed. Alternatively, explicitly set `parser='liac-arff'`.")
+FAILED {'model': 'arf', 'n_models': 20, 'reuse': 1, 'tier': 1} 203 ImportError("Using `parser='auto'` with dense data requires pandas to be installed. Alternatively, explicitly set `parser='liac-arff'`.")
+FAILED {'model': 'arf', 'n_models': 20, 'reuse': 1, 'tier': 1} 204 ImportError("Using `parser='auto'` with dense data requires pandas to be installed. Alternatively, explicitly set `parser='liac-arff'`.")

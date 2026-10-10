@@ -1,0 +1,5 @@
+{"stream": "rbfdrift", "family": "mlp", "cfg": {"gate": 0.0, "h": 128, "lr": 0.003, "reuse": 1}, "seed": 200, "acc": 0.85025, "pJ_answer": 15676.0, "pJ_update": 129085.20000005279, "secs": 2.5}
+{"stream": "rbfdrift", "family": "mlp", "cfg": {"gate": 0.0, "h": 128, "lr": 0.003, "reuse": 1}, "seed": 201, "acc": 0.8452, "pJ_answer": 15676.0, "pJ_update": 129085.20000005279, "secs": 2.5}
+{"stream": "rbfdrift", "family": "mlp", "cfg": {"gate": 0.0, "h": 128, "lr": 0.003, "reuse": 1}, "seed": 202, "acc": 0.8296, "pJ_answer": 15676.0, "pJ_update": 129085.20000005279, "secs": 2.5}
+{"stream": "rbfdrift", "family": "mlp", "cfg": {"gate": 0.0, "h": 128, "lr": 0.003, "reuse": 1}, "seed": 203, "acc": 0.8733, "pJ_answer": 15676.0, "pJ_update": 129085.20000005279, "secs": 2.5}
+{"stream": "rbfdrift", "family": "mlp", "cfg": {"gate": 0.0, "h": 128, "lr": 0.003, "reuse": 1}, "seed": 204, "acc": 0.8511, "pJ_answer": 15676.0, "pJ_update": 129085.20000005279, "secs": 2.5}

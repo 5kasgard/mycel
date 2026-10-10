@@ -1,0 +1,5 @@
+{"stream": "rbfdrift", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 200, "acc": 0.93375, "pJ_answer": 42333.915, "pJ_update": 40.0, "secs": 1.2}
+{"stream": "rbfdrift", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 201, "acc": 0.93055, "pJ_answer": 42333.915, "pJ_update": 40.0, "secs": 1.2}
+{"stream": "rbfdrift", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 202, "acc": 0.92865, "pJ_answer": 42333.915, "pJ_update": 40.0, "secs": 1.2}
+{"stream": "rbfdrift", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 203, "acc": 0.94125, "pJ_answer": 42333.915, "pJ_update": 40.0, "secs": 1.2}
+{"stream": "rbfdrift", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 204, "acc": 0.9375, "pJ_answer": 42333.915, "pJ_update": 40.0, "secs": 1.2}

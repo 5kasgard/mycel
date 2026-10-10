@@ -1,0 +1,5 @@
+FAILED {'gate': 0.0, 'h': 128, 'lr': 0.003, 'reuse': 1} 200 ImportError("Using `parser='auto'` with dense data requires pandas to be installed. Alternatively, explicitly set `parser='liac-arff'`.")
+FAILED {'gate': 0.0, 'h': 128, 'lr': 0.003, 'reuse': 1} 201 ImportError("Using `parser='auto'` with dense data requires pandas to be installed. Alternatively, explicitly set `parser='liac-arff'`.")
+FAILED {'gate': 0.0, 'h': 128, 'lr': 0.003, 'reuse': 1} 202 ImportError("Using `parser='auto'` with dense data requires pandas to be installed. Alternatively, explicitly set `parser='liac-arff'`.")
+FAILED {'gate': 0.0, 'h': 128, 'lr': 0.003, 'reuse': 1} 203 ImportError("Using `parser='auto'` with dense data requires pandas to be installed. Alternatively, explicitly set `parser='liac-arff'`.")
+FAILED {'gate': 0.0, 'h': 128, 'lr': 0.003, 'reuse': 1} 204 ImportError("Using `parser='auto'` with dense data requires pandas to be installed. Alternatively, explicitly set `parser='liac-arff'`.")

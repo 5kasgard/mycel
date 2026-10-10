@@ -1,0 +1,5 @@
+{"stream": "agrawal", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 200, "acc": 0.71335, "pJ_answer": 42012.17325, "pJ_update": 40.0, "secs": 1.0}
+{"stream": "agrawal", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 201, "acc": 0.71055, "pJ_answer": 42012.17325, "pJ_update": 40.0, "secs": 1.0}
+{"stream": "agrawal", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 202, "acc": 0.71465, "pJ_answer": 42012.17325, "pJ_update": 40.0, "secs": 1.0}
+{"stream": "agrawal", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 203, "acc": 0.72145, "pJ_answer": 42012.17325, "pJ_update": 40.0, "secs": 1.0}
+{"stream": "agrawal", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 204, "acc": 0.71735, "pJ_answer": 42012.17325, "pJ_update": 40.0, "secs": 1.0}

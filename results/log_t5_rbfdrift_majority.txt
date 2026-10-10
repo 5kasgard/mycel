@@ -1,0 +1,5 @@
+{"stream": "rbfdrift", "family": "majority", "cfg": {}, "seed": 200, "acc": 0.50745, "pJ_answer": 10.100000000003599, "pJ_update": 10.100000000003599, "secs": 0.0}
+{"stream": "rbfdrift", "family": "majority", "cfg": {}, "seed": 201, "acc": 0.5587, "pJ_answer": 10.100000000003599, "pJ_update": 10.100000000003599, "secs": 0.0}
+{"stream": "rbfdrift", "family": "majority", "cfg": {}, "seed": 202, "acc": 0.55015, "pJ_answer": 10.100000000003599, "pJ_update": 10.100000000003599, "secs": 0.0}
+{"stream": "rbfdrift", "family": "majority", "cfg": {}, "seed": 203, "acc": 0.70275, "pJ_answer": 10.100000000003599, "pJ_update": 10.100000000003599, "secs": 0.0}
+{"stream": "rbfdrift", "family": "majority", "cfg": {}, "seed": 204, "acc": 0.5541, "pJ_answer": 10.100000000003599, "pJ_update": 10.100000000003599, "secs": 0.0}

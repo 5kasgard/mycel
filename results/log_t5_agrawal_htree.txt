@@ -1,0 +1,5 @@
+{"stream": "agrawal", "family": "htree", "cfg": {"delta": 0.01, "grace": 20, "reuse": 1, "tier": 1}, "seed": 200, "acc": 0.76765, "pJ_answer": 51.2231599999992, "pJ_update": 151.2868000000341, "secs": 0.4}
+{"stream": "agrawal", "family": "htree", "cfg": {"delta": 0.01, "grace": 20, "reuse": 1, "tier": 1}, "seed": 201, "acc": 0.74445, "pJ_answer": 58.33456999999882, "pJ_update": 162.54223000004637, "secs": 0.5}
+{"stream": "agrawal", "family": "htree", "cfg": {"delta": 0.01, "grace": 20, "reuse": 1, "tier": 1}, "seed": 202, "acc": 0.68675, "pJ_answer": 60.45261999999279, "pJ_update": 147.4432950000297, "secs": 0.4}
+{"stream": "agrawal", "family": "htree", "cfg": {"delta": 0.01, "grace": 20, "reuse": 1, "tier": 1}, "seed": 203, "acc": 0.7726, "pJ_answer": 50.96762999999689, "pJ_update": 146.95815000002827, "secs": 0.4}
+{"stream": "agrawal", "family": "htree", "cfg": {"delta": 0.01, "grace": 20, "reuse": 1, "tier": 1}, "seed": 204, "acc": 0.79415, "pJ_answer": 51.77057999999993, "pJ_update": 146.98477000002893, "secs": 0.4}

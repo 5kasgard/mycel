@@ -1,0 +1,5 @@
+{"stream": "seanoisy", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 200, "acc": 0.8684, "pJ_answer": 10877.9782, "pJ_update": 10.0, "secs": 1.0}
+{"stream": "seanoisy", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 201, "acc": 0.86564, "pJ_answer": 10877.9782, "pJ_update": 10.0, "secs": 1.0}
+{"stream": "seanoisy", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 202, "acc": 0.86484, "pJ_answer": 10877.9782, "pJ_update": 10.0, "secs": 1.0}
+{"stream": "seanoisy", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 203, "acc": 0.85996, "pJ_answer": 10877.9782, "pJ_update": 10.0, "secs": 1.0}
+{"stream": "seanoisy", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 204, "acc": 0.8646, "pJ_answer": 10877.9782, "pJ_update": 10.0, "secs": 1.0}

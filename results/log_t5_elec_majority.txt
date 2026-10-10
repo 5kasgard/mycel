@@ -1,0 +1,5 @@
+FAILED {} 200 ImportError("Using `parser='auto'` with dense data requires pandas to be installed. Alternatively, explicitly set `parser='liac-arff'`.")
+FAILED {} 201 ImportError("Using `parser='auto'` with dense data requires pandas to be installed. Alternatively, explicitly set `parser='liac-arff'`.")
+FAILED {} 202 ImportError("Using `parser='auto'` with dense data requires pandas to be installed. Alternatively, explicitly set `parser='liac-arff'`.")
+FAILED {} 203 ImportError("Using `parser='auto'` with dense data requires pandas to be installed. Alternatively, explicitly set `parser='liac-arff'`.")
+FAILED {} 204 ImportError("Using `parser='auto'` with dense data requires pandas to be installed. Alternatively, explicitly set `parser='liac-arff'`.")

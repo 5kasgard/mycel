@@ -1,0 +1,5 @@
+{"stream": "permdigits", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 200, "acc": 0.9118933969769292, "pJ_answer": 794051.2191726333, "pJ_update": 800.0, "secs": 1.7}
+{"stream": "permdigits", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 201, "acc": 0.9130867143993636, "pJ_answer": 794051.2191726333, "pJ_update": 800.0, "secs": 1.7}
+{"stream": "permdigits", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 202, "acc": 0.9148766905330151, "pJ_answer": 794051.2191726333, "pJ_update": 800.0, "secs": 1.7}
+{"stream": "permdigits", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 203, "acc": 0.9132856006364359, "pJ_answer": 794051.2191726333, "pJ_update": 800.0, "secs": 1.7}
+{"stream": "permdigits", "family": "knn", "cfg": {"k": 25, "window": 1000}, "seed": 204, "acc": 0.9166003712543092, "pJ_answer": 794051.2191726333, "pJ_update": 800.0, "secs": 1.7}

@@ -1,0 +1,5 @@
+{"stream": "permdigits", "family": "mlp", "cfg": {"gate": 0.0, "h": 128, "lr": 0.003, "reuse": 1}, "seed": 200, "acc": 0.8963802704852825, "pJ_answer": 524621.6000001379, "pJ_update": 3056632.3999995193, "secs": 2.4}
+{"stream": "permdigits", "family": "mlp", "cfg": {"gate": 0.0, "h": 128, "lr": 0.003, "reuse": 1}, "seed": 201, "acc": 0.9049323786793954, "pJ_answer": 524621.6000001379, "pJ_update": 3056632.3999995193, "secs": 2.4}
+{"stream": "permdigits", "family": "mlp", "cfg": {"gate": 0.0, "h": 128, "lr": 0.003, "reuse": 1}, "seed": 202, "acc": 0.9001591089896579, "pJ_answer": 524621.6000001379, "pJ_update": 3056632.3999995193, "secs": 2.4}
+{"stream": "permdigits", "family": "mlp", "cfg": {"gate": 0.0, "h": 128, "lr": 0.003, "reuse": 1}, "seed": 203, "acc": 0.902877220896314, "pJ_answer": 524621.6000001379, "pJ_update": 3056632.3999995193, "secs": 2.4}
+{"stream": "permdigits", "family": "mlp", "cfg": {"gate": 0.0, "h": 128, "lr": 0.003, "reuse": 1}, "seed": 204, "acc": 0.8962476796605675, "pJ_answer": 524621.6000001379, "pJ_update": 3056632.3999995193, "secs": 2.4}

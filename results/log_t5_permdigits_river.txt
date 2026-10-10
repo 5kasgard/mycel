@@ -1,0 +1,5 @@
+FAILED {'model': 'arf', 'n_models': 20, 'reuse': 1, 'tier': 1} 200 AttributeError("module 'river' has no attribute 'forest'")
+FAILED {'model': 'arf', 'n_models': 20, 'reuse': 1, 'tier': 1} 201 AttributeError("module 'river' has no attribute 'forest'")
+FAILED {'model': 'arf', 'n_models': 20, 'reuse': 1, 'tier': 1} 202 AttributeError("module 'river' has no attribute 'forest'")
+FAILED {'model': 'arf', 'n_models': 20, 'reuse': 1, 'tier': 1} 203 AttributeError("module 'river' has no attribute 'forest'")
+FAILED {'model': 'arf', 'n_models': 20, 'reuse': 1, 'tier': 1} 204 AttributeError("module 'river' has no attribute 'forest'")
