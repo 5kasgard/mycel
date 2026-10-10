@@ -115,3 +115,38 @@ _lv2.VARIANTS["perc16"] = (Perceptron16, {})
 
 # 5. confirmation pool for the market scan (scan_tasks2 registers new tasks under new tags).
 import scan_tasks2  # noqa
+
+
+# 6. parts test (after the market-scan audit): Mycel's thermometer ports feeding a plain linear learner.
+#    Same Encoder2 quantile thresholds (B=8, positive rail only) fitted on the warm-up; encoding priced
+#    as one compare per threshold plus reading the thresholds; the learner then runs on the bits.
+class _Thermo(_lv2.Base):
+    def __init__(self, K, seed=0, inner="perc16", B=8):
+        self.K, self.B, self.inner_name, self.seed = K, B, inner, seed; self.cfg = dict(inner=inner, B=B)
+        self.answer_pJ = 0.0; self.update_pJ = 0.0
+
+    def start(self, Xw, K):
+        self.enc = _lv2.Encoder2(self.B).fit(Xw); self.h = self.enc.L // 2
+        cls, kw = _lv2.VARIANTS[self.inner_name]; self.inner = cls(K, seed=self.seed, **kw)
+        self.inner.start(self._bits(Xw), K)
+        self.enc_pJ = self.h * 0.1 + 10 * _lv2.words(self.h * 8) + 10 * _lv2.words(Xw.shape[1] * 8)
+
+    def _bits(self, X):
+        return self.enc.bits(_np.atleast_2d(X))[:, :self.h].astype(float)
+
+    def answer(self, x):
+        b = self._bits(x)[0]; self._b = b; self.n_ans += 1
+        a0 = self.inner.answer_pJ; p = self.inner.answer(b)
+        self.answer_pJ += (self.inner.answer_pJ - a0) + self.enc_pJ
+        return p
+
+    def learn(self, x, y):
+        u0 = self.inner.update_pJ; self.inner.learn(self._b, y); self.n_upd += 1
+        self.update_pJ += self.inner.update_pJ - u0
+
+    def mem_bits(self):
+        return int(self.inner.mem_bits() + self.h * 8)
+
+
+_lv2.VARIANTS["thperc16"] = (_Thermo, dict(inner="perc16"))
+_lv2.VARIANTS["thlog"] = (_Thermo, dict(inner="logistic"))
