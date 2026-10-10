@@ -3,6 +3,7 @@ Usage: python exp22.py <stream> <family> <settings-json-or-@file-or-grid:spec> <
 Writes results_r5_<tag>.json: one compact record per (setting, seed)."""
 import json, sys, time, numpy as np
 import streams
+import patches  # noqa: runtime fixes (river submodules, elec loader)
 from learners_s import OnlineMycel, OnlineMLP, WindowKNN, HTree, Majority, RiverLearner
 
 FAMILIES = dict(mycel=OnlineMycel, mlp=OnlineMLP, knn=WindowKNN, htree=HTree, majority=Majority, river=RiverLearner)
