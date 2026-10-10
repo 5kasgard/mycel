@@ -1,0 +1,8 @@
+{
+ "htree": {"delta": 0.01, "grace": 20, "reuse": 1, "tier": 1},
+ "knn": {"k": 25, "window": 1000},
+ "mlp": {"gate": 0.0, "h": 128, "lr": 0.003, "reuse": 1},
+ "river": {"model": "arf", "n_models": 20, "reuse": 1, "tier": 1},
+ "mycel": {"B": 24, "M": 16, "P": 512, "R": 0, "T": 512, "consolidate": 0.0, "ga": 2, "gate": 0.75, "grow": 1, "reuse": 1, "s": 3.0, "tag": "shared"},
+ "majority": {}
+}
