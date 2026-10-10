@@ -22,12 +22,14 @@ class Base:
 # ------------------------------------------------------------------ Mycel
 class OnlineMycel(Base):
     def __init__(self, K, tag="shared", P=64, C=8, B=4, s=4.0, T=None, w=0, consolidate=0.0, grow=0, seed=0,
-                 price_every=500, bmode=0, M=0, reuse=0, gate=0.0, R=0):
+                 price_every=500, bmode=0, M=0, reuse=0, gate=0.0, R=0, ga=0):
         self.cfg = dict(tag=tag, P=P, C=C, B=B, s=s, T=T, w=w, consolidate=consolidate, grow=grow, bmode=bmode, M=M)
         if reuse: self.cfg["reuse"] = reuse
         if gate: self.cfg["gate"] = gate
         if R: self.cfg["R"] = R
-        self.reuse, self.gate = reuse, gate
+        if ga: self.cfg["ga"] = ga
+        self.reuse, self.gate, self.ga = reuse, gate, ga
+        self.e_fast, self.e_slow = 0.5, 0.5                              # running error rates (surprise detector)
         self.bx, self.by = [], []
         if tag == "shared":
             self.m = MycelCo(K, P=P, B=B, s=s, T=T, epochs=1, seed=seed, M=M, grow=grow, R=R)
@@ -61,12 +63,18 @@ class OnlineMycel(Base):
 
     def learn(self, x, y):
         m = self.m; self.y1[0] = y
-        if self.gate:                                                    # satiation: a confident right answer teaches nothing
+        if self.ga:                                                      # neuromodulation: surprise (recent error above
+            v = self._v; err = float(np.flatnonzero(v == v.max())[0] != y)  # the long-run error) switches satiation off
+            self.e_fast += (err - self.e_fast) / 100.0; self.e_slow += (err - self.e_slow) / 2000.0
+            self.update_pJ += 0.4
+        surprised = self.ga and self.e_fast > self.e_slow
+        if self.gate and not surprised:                                  # satiation: a confident right answer teaches nothing
             v = self._v; T = m.T if getattr(m, "T", None) else 1
             mo = np.delete(v, y).max() if len(v) > 1 else 0
             self.update_pJ += 0.1 * self.K
-            if v[y] - mo >= self.gate * T:
-                self.n_upd += 1; return
+            mg = v[y] - mo
+            if mg >= self.gate * T or (self.ga == 2 and -mg >= self.gate * T):   # ga=2: when calm, a confident
+                self.n_upd += 1; return                                  # contradiction is treated as noise too
         _lib.d_reset_counters()
         if isinstance(m, MycelCo):
             _lib.co_epoch(1, m.K, m.P, m.M, m.W, m.L, PTR(m.lit), PTR(m.cnt), PTR(m.inc), PTR(m.has), PTR(m.alive),
@@ -117,12 +125,14 @@ class OnlineMycel(Base):
 # ------------------------------------------------------------------ networks
 class OnlineMLP(Base):
     """One hidden layer, float32, Adam, one example per step; optional replay buffer and EWC at boundaries."""
-    def __init__(self, K, h=32, lr=0.01, replay=0, k=1, ewc=0.0, seed=0, reuse=0, gate=0.0):
+    def __init__(self, K, h=32, lr=0.01, replay=0, k=1, ewc=0.0, seed=0, reuse=0, gate=0.0, ga=0):
         self.K, self.h, self.lr, self.replay, self.k, self.ewc_lam = K, h, lr, replay, k, ewc
         self.r = np.random.default_rng(seed); self.cfg = dict(h=h, lr=lr, replay=replay, k=k, ewc=ewc)
         if reuse: self.cfg["reuse"] = reuse
         if gate: self.cfg["gate"] = gate
-        self.reuse, self.gate = reuse, gate
+        if ga: self.cfg["ga"] = ga
+        self.reuse, self.gate, self.ga = reuse, gate, ga
+        self.e_fast, self.e_slow = 0.5, 0.5
         self.buf_x, self.buf_y, self.seen = [], [], 0
         self.answer_pJ = 0.0; self.update_pJ = 0.0; self.anchor = None; self.recentx, self.recenty = [], []
 
@@ -163,9 +173,14 @@ class OnlineMLP(Base):
         return n * (3 * self.fwd * FMAC) + self.nparam * 10 * 0.9 + self.tier * self.nparam * 32 * 6 / 64
 
     def learn(self, x, y):
-        if self.gate:                                                    # same satiation rule: skip if p(y) >= gate
+        surprised = False
+        if self.ga:                                                      # same surprise detector as Mycel's
+            err = float(np.argmax(self._z) != y); self.update_pJ += 0.4
+            self.e_fast += (err - self.e_fast) / 100.0; self.e_slow += (err - self.e_slow) / 2000.0
+            surprised = self.e_fast > self.e_slow
+        if self.gate and not surprised:                                  # same satiation rule: skip if p(y) >= gate
             z = self._z - self._z.max(); p = np.exp(z); p /= p.sum(); self.update_pJ += self.K * 2.0
-            if p[y] >= self.gate:
+            if p[y] >= self.gate or (self.ga == 2 and p[y] <= 1 - self.gate):
                 self.n_upd += 1; return
         X = [x]; Y = [y]
         if self.replay and self.buf_x:

@@ -31,6 +31,18 @@ def grid(family, stream):
         for P, B, s, M, R, g in itertools.product((256, 512, 1024), (12, 16, 24), (1.5, 2.0, 3.0), (8, 16), (0, 8), (0.0, 0.5)):
             out.append(dict(tag="shared", P=P, B=B, s=s, T=P, consolidate=0.0, M=M, grow=1, reuse=1, R=R, gate=g))
         return out
+    if family == "mycel4":
+        # sweep 4: neuromodulated satiation. ga=2: while recent error is not above the long-run error ("calm"),
+        # skip learning on examples answered with a margin beyond gate*T either way (confidently right = nothing
+        # to learn; confidently contradicted = probably label noise). When surprised, learn from everything.
+        out = []
+        for P, B, s, M, R, g in itertools.product((512, 1024, 2048), (16, 24), (2.0, 3.0), (8, 16), (0, 8), (0.0, 0.5, 0.75, 1.0)):
+            c = dict(tag="shared", P=P, B=B, s=s, T=P, consolidate=0.0, M=M, grow=1, reuse=1, R=R, gate=g)
+            if g: c["ga"] = 2
+            out.append(c)
+        return out
+    if family == "mlp4":
+        return [dict(h=h, lr=lr, reuse=1, gate=g, ga=2) for h in (64, 128) for lr in (0.001, 0.003) for g in (0.75, 0.9, 0.97)]
     if family == "mlp3":
         out = []
         for h, lr, g in itertools.product((64, 128, 256), (0.0003, 0.001, 0.003), (0.0, 0.9)):
