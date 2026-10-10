@@ -1,0 +1,58 @@
+name: run-experiments
+# Runs every job listed in jobs.json as a separate parallel job, then commits all result files to results/.
+on:
+  push:
+    paths: ["jobs.json"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        run: echo "matrix=$(jq -c . jobs.json)" >> "$GITHUB_OUTPUT"
+  run:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install numpy==2.5.3 scipy==1.18.1 scikit-learn==1.9.1
+      - run: gcc -O3 -shared -fPIC -o libdcore.so dcore.c
+      - run: python ${{ matrix.cmd }} | tee log_${{ matrix.id }}.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.id }}
+          path: |
+            results_*.json
+            log_*.txt
+  collect:
+    needs: run
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: incoming
+          merge-multiple: true
+      - run: |
+          mkdir -p results
+          cp incoming/* results/ 2>/dev/null || true
+          git config user.name "mycel-runner"
+          git config user.email "actions@users.noreply.github.com"
+          git add results
+          git commit -m "Results for jobs.json run ${GITHUB_RUN_NUMBER}" || exit 0
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
