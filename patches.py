@@ -111,3 +111,7 @@ class Perceptron16(_lv2.Base):
 
 
 _lv2.VARIANTS["perc16"] = (Perceptron16, {})
+
+
+# 5. confirmation pool for the market scan (scan_tasks2 registers new tasks under new tags).
+import scan_tasks2  # noqa
