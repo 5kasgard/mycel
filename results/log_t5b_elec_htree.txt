@@ -1,0 +1,5 @@
+{"stream": "elec", "family": "htree", "cfg": {"delta": 0.01, "grace": 20, "reuse": 1, "tier": 1}, "seed": 200, "acc": 0.7949108403954802, "pJ_answer": 35.36819606285545, "pJ_update": 145.2204073974955, "secs": 0.7}
+{"stream": "elec", "family": "htree", "cfg": {"delta": 0.01, "grace": 20, "reuse": 1, "tier": 1}, "seed": 201, "acc": 0.7949108403954802, "pJ_answer": 35.36819606285545, "pJ_update": 145.2204073974955, "secs": 0.7}
+{"stream": "elec", "family": "htree", "cfg": {"delta": 0.01, "grace": 20, "reuse": 1, "tier": 1}, "seed": 202, "acc": 0.7949108403954802, "pJ_answer": 35.36819606285545, "pJ_update": 145.2204073974955, "secs": 0.7}
+{"stream": "elec", "family": "htree", "cfg": {"delta": 0.01, "grace": 20, "reuse": 1, "tier": 1}, "seed": 203, "acc": 0.7949108403954802, "pJ_answer": 35.36819606285545, "pJ_update": 145.2204073974955, "secs": 0.8}
+{"stream": "elec", "family": "htree", "cfg": {"delta": 0.01, "grace": 20, "reuse": 1, "tier": 1}, "seed": 204, "acc": 0.7949108403954802, "pJ_answer": 35.36819606285545, "pJ_update": 145.2204073974955, "secs": 0.7}

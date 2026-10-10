@@ -1,0 +1,5 @@
+{"stream": "seanoisy", "family": "river", "cfg": {"model": "arf", "n_models": 20, "reuse": 1, "tier": 1}, "seed": 200, "acc": 0.87032, "pJ_answer": 26610.899199998566, "pJ_update": 4719.162, "secs": 25.7}
+{"stream": "seanoisy", "family": "river", "cfg": {"model": "arf", "n_models": 20, "reuse": 1, "tier": 1}, "seed": 201, "acc": 0.867, "pJ_answer": 25676.844399997844, "pJ_update": 4719.162, "secs": 24.2}
+{"stream": "seanoisy", "family": "river", "cfg": {"model": "arf", "n_models": 20, "reuse": 1, "tier": 1}, "seed": 202, "acc": 0.86644, "pJ_answer": 25407.972399999304, "pJ_update": 4719.162, "secs": 26.6}
+{"stream": "seanoisy", "family": "river", "cfg": {"model": "arf", "n_models": 20, "reuse": 1, "tier": 1}, "seed": 203, "acc": 0.864, "pJ_answer": 24659.247400002023, "pJ_update": 4575.162, "secs": 25.7}
+{"stream": "seanoisy", "family": "river", "cfg": {"model": "arf", "n_models": 20, "reuse": 1, "tier": 1}, "seed": 204, "acc": 0.86792, "pJ_answer": 24976.028399999846, "pJ_update": 4575.162, "secs": 25.7}

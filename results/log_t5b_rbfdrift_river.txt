@@ -1,0 +1,5 @@
+{"stream": "rbfdrift", "family": "river", "cfg": {"model": "arf", "n_models": 20, "reuse": 1, "tier": 1}, "seed": 200, "acc": 0.9581, "pJ_answer": 23727.410500000413, "pJ_update": 15936.925, "secs": 31.9}
+{"stream": "rbfdrift", "family": "river", "cfg": {"model": "arf", "n_models": 20, "reuse": 1, "tier": 1}, "seed": 201, "acc": 0.96405, "pJ_answer": 25105.383499996253, "pJ_update": 15936.925, "secs": 34.5}
+{"stream": "rbfdrift", "family": "river", "cfg": {"model": "arf", "n_models": 20, "reuse": 1, "tier": 1}, "seed": 202, "acc": 0.96005, "pJ_answer": 43360.035999996064, "pJ_update": 24945.925, "secs": 36.1}
+{"stream": "rbfdrift", "family": "river", "cfg": {"model": "arf", "n_models": 20, "reuse": 1, "tier": 1}, "seed": 203, "acc": 0.95105, "pJ_answer": 44374.24324999697, "pJ_update": 24936.925, "secs": 31.6}
+{"stream": "rbfdrift", "family": "river", "cfg": {"model": "arf", "n_models": 20, "reuse": 1, "tier": 1}, "seed": 204, "acc": 0.95795, "pJ_answer": 60554.3165000005, "pJ_update": 33936.925, "secs": 34.4}
