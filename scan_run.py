@@ -6,6 +6,8 @@ import scan_tasks as T
 from learners_v2 import VARIANTS
 
 WARM, WIN = 200, 500
+GROUPS = {"A": "mycelT,mycelS,mycelA,mycelL,mlp_adam128,mlp_sgd32,logistic,gnb,knn,htree,majority",
+          "B": "hat,arf5", "C": "arf20"}
 
 
 def traits(S):
@@ -30,7 +32,7 @@ def run(task, S, name, seed):
 
 
 if __name__ == "__main__":
-    task, names, a, b, tag = sys.argv[1], sys.argv[2].split(","), int(sys.argv[3]), int(sys.argv[4]), sys.argv[5]
+    task, names, a, b, tag = sys.argv[1], GROUPS.get(sys.argv[2], sys.argv[2]).split(","), int(sys.argv[3]), int(sys.argv[4]), sys.argv[5]
     out = []
     for seed in range(a, b):
         try:
