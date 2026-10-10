@@ -27,6 +27,7 @@ def run(task, S, name, seed):
     rec = dict(task=task, tag=T.TAG[task], half=T.half(task), variant=name, seed=seed, acc=float(ok.mean()),
                acc_late=float(ok[len(y) // 2:].mean()), pJ_answer=L.answer_pJ / len(y), pJ_update=L.update_pJ / len(y),
                mem_bits=int(L.mem_bits()), secs=round(time.time() - t0, 1))
+    if hasattr(L, "diag"): rec["diag"] = L.diag
     rec["recovery"] = float(np.mean([ok[c:c + WIN].mean() for c in S["changes"]])) if S["changes"] else None
     return rec
 
