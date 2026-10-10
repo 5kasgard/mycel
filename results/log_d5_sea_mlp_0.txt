@@ -1,0 +1,45 @@
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.003}, "seed": 100, "acc": 0.91188, "pJ_answer": 906.8000000004207, "pJ_update": 4926.0, "secs": 2.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.003}, "seed": 101, "acc": 0.9142, "pJ_answer": 906.8000000004207, "pJ_update": 4926.0, "secs": 2.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.003}, "seed": 102, "acc": 0.91976, "pJ_answer": 906.8000000004207, "pJ_update": 4926.0, "secs": 2.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.003, "replay": 200, "k": 1}, "seed": 100, "acc": 0.9012, "pJ_answer": 906.8000000004207, "pJ_update": 6049.95544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.003, "replay": 200, "k": 1}, "seed": 101, "acc": 0.90156, "pJ_answer": 906.8000000004207, "pJ_update": 6049.95544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.003, "replay": 200, "k": 1}, "seed": 102, "acc": 0.9078, "pJ_answer": 906.8000000004207, "pJ_update": 6049.95544, "secs": 3.7}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.003, "replay": 200, "k": 4}, "seed": 100, "acc": 0.88216, "pJ_answer": 906.8000000004207, "pJ_update": 9391.5544, "secs": 3.9}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.003, "replay": 200, "k": 4}, "seed": 101, "acc": 0.89756, "pJ_answer": 906.8000000004207, "pJ_update": 9391.5544, "secs": 3.9}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.003, "replay": 200, "k": 4}, "seed": 102, "acc": 0.89432, "pJ_answer": 906.8000000004207, "pJ_update": 9391.5544, "secs": 3.9}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.003, "replay": 1000, "k": 1}, "seed": 100, "acc": 0.90392, "pJ_answer": 906.8000000004207, "pJ_update": 6049.95544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.003, "replay": 1000, "k": 1}, "seed": 101, "acc": 0.90696, "pJ_answer": 906.8000000004207, "pJ_update": 6049.95544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.003, "replay": 1000, "k": 1}, "seed": 102, "acc": 0.91, "pJ_answer": 906.8000000004207, "pJ_update": 6049.95544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.003, "replay": 1000, "k": 4}, "seed": 100, "acc": 0.89488, "pJ_answer": 906.8000000004207, "pJ_update": 9391.5544, "secs": 3.9}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.003, "replay": 1000, "k": 4}, "seed": 101, "acc": 0.89832, "pJ_answer": 906.8000000004207, "pJ_update": 9391.5544, "secs": 3.9}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.003, "replay": 1000, "k": 4}, "seed": 102, "acc": 0.89816, "pJ_answer": 906.8000000004207, "pJ_update": 9391.5544, "secs": 3.9}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.01}, "seed": 100, "acc": 0.91688, "pJ_answer": 906.8000000004207, "pJ_update": 4926.0, "secs": 2.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.01}, "seed": 101, "acc": 0.91616, "pJ_answer": 906.8000000004207, "pJ_update": 4926.0, "secs": 2.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.01}, "seed": 102, "acc": 0.91916, "pJ_answer": 906.8000000004207, "pJ_update": 4926.0, "secs": 2.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.01, "replay": 200, "k": 1}, "seed": 100, "acc": 0.90564, "pJ_answer": 906.8000000004207, "pJ_update": 6049.95544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.01, "replay": 200, "k": 1}, "seed": 101, "acc": 0.90344, "pJ_answer": 906.8000000004207, "pJ_update": 6049.95544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.01, "replay": 200, "k": 1}, "seed": 102, "acc": 0.9098, "pJ_answer": 906.8000000004207, "pJ_update": 6049.95544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.01, "replay": 200, "k": 4}, "seed": 100, "acc": 0.88404, "pJ_answer": 906.8000000004207, "pJ_update": 9391.5544, "secs": 3.9}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.01, "replay": 200, "k": 4}, "seed": 101, "acc": 0.89872, "pJ_answer": 906.8000000004207, "pJ_update": 9391.5544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.01, "replay": 200, "k": 4}, "seed": 102, "acc": 0.89624, "pJ_answer": 906.8000000004207, "pJ_update": 9391.5544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.01, "replay": 1000, "k": 1}, "seed": 100, "acc": 0.9078, "pJ_answer": 906.8000000004207, "pJ_update": 6049.95544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.01, "replay": 1000, "k": 1}, "seed": 101, "acc": 0.9094, "pJ_answer": 906.8000000004207, "pJ_update": 6049.95544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.01, "replay": 1000, "k": 1}, "seed": 102, "acc": 0.9124, "pJ_answer": 906.8000000004207, "pJ_update": 6049.95544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.01, "replay": 1000, "k": 4}, "seed": 100, "acc": 0.89548, "pJ_answer": 906.8000000004207, "pJ_update": 9391.5544, "secs": 3.9}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.01, "replay": 1000, "k": 4}, "seed": 101, "acc": 0.89968, "pJ_answer": 906.8000000004207, "pJ_update": 9391.5544, "secs": 3.9}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.01, "replay": 1000, "k": 4}, "seed": 102, "acc": 0.89872, "pJ_answer": 906.8000000004207, "pJ_update": 9391.5544, "secs": 3.9}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.03}, "seed": 100, "acc": 0.90748, "pJ_answer": 906.8000000004207, "pJ_update": 4926.0, "secs": 2.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.03}, "seed": 101, "acc": 0.904, "pJ_answer": 906.8000000004207, "pJ_update": 4926.0, "secs": 2.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.03}, "seed": 102, "acc": 0.9094, "pJ_answer": 906.8000000004207, "pJ_update": 4926.0, "secs": 2.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.03, "replay": 200, "k": 1}, "seed": 100, "acc": 0.89892, "pJ_answer": 906.8000000004207, "pJ_update": 6049.95544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.03, "replay": 200, "k": 1}, "seed": 101, "acc": 0.89748, "pJ_answer": 906.8000000004207, "pJ_update": 6049.95544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.03, "replay": 200, "k": 1}, "seed": 102, "acc": 0.90152, "pJ_answer": 906.8000000004207, "pJ_update": 6049.95544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.03, "replay": 200, "k": 4}, "seed": 100, "acc": 0.87976, "pJ_answer": 906.8000000004207, "pJ_update": 9391.5544, "secs": 3.9}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.03, "replay": 200, "k": 4}, "seed": 101, "acc": 0.89684, "pJ_answer": 906.8000000004207, "pJ_update": 9391.5544, "secs": 3.9}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.03, "replay": 200, "k": 4}, "seed": 102, "acc": 0.8926, "pJ_answer": 906.8000000004207, "pJ_update": 9391.5544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.03, "replay": 1000, "k": 1}, "seed": 100, "acc": 0.90232, "pJ_answer": 906.8000000004207, "pJ_update": 6049.95544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.03, "replay": 1000, "k": 1}, "seed": 101, "acc": 0.8998, "pJ_answer": 906.8000000004207, "pJ_update": 6049.95544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.03, "replay": 1000, "k": 1}, "seed": 102, "acc": 0.90536, "pJ_answer": 906.8000000004207, "pJ_update": 6049.95544, "secs": 3.8}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.03, "replay": 1000, "k": 4}, "seed": 100, "acc": 0.89604, "pJ_answer": 906.8000000004207, "pJ_update": 9391.5544, "secs": 3.9}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.03, "replay": 1000, "k": 4}, "seed": 101, "acc": 0.89756, "pJ_answer": 906.8000000004207, "pJ_update": 9391.5544, "secs": 3.9}
+{"stream": "sea", "family": "mlp", "cfg": {"h": 16, "lr": 0.03, "replay": 1000, "k": 4}, "seed": 102, "acc": 0.89696, "pJ_answer": 906.8000000004207, "pJ_update": 9391.5544, "secs": 3.9}
