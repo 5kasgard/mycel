@@ -1,14 +1,3 @@
 [
- {"id": "cancer_s8", "cmd": "exp20.py cancer 8 9"},
- {"id": "cancer_s9", "cmd": "exp20.py cancer 9 10"},
- {"id": "synth20_s0", "cmd": "exp20.py synth20 0 1"},
- {"id": "synth20_s1", "cmd": "exp20.py synth20 1 2"},
- {"id": "synth20_s2", "cmd": "exp20.py synth20 2 3"},
- {"id": "synth20_s3", "cmd": "exp20.py synth20 3 4"},
- {"id": "synth20_s4", "cmd": "exp20.py synth20 4 5"},
- {"id": "synth20_s5", "cmd": "exp20.py synth20 5 6"},
- {"id": "synth20_s6", "cmd": "exp20.py synth20 6 7"},
- {"id": "synth20_s7", "cmd": "exp20.py synth20 7 8"},
- {"id": "synth20_s8", "cmd": "exp20.py synth20 8 9"},
- {"id": "synth20_s9", "cmd": "exp20.py synth20 9 10"}
+ {"id": "compact_r4", "cmd": "compact.py results/results_r4_*.json results_compact_r4_github.json"}
 ]
