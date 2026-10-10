@@ -1,0 +1,3 @@
+{"task": "c3_balance", "variant": "arf20", "seed": 500, "acc": 0.808, "pJ_answer": 11335.023999999987, "pJ_update": 9721.0368, "secs": 1.0}
+{"task": "c3_balance", "variant": "arf20", "seed": 501, "acc": 0.832, "pJ_answer": 11463.49599999999, "pJ_update": 9721.0368, "secs": 1.0}
+{"task": "c3_balance", "variant": "arf20", "seed": 502, "acc": 0.824, "pJ_answer": 9512.084000000003, "pJ_update": 7941.1968, "secs": 1.1}

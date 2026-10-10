@@ -1,0 +1,3 @@
+{"task": "c3_nomao", "variant": "arf20", "seed": 500, "acc": 0.9415, "pJ_answer": 8281286.487000578, "pJ_update": 12604873.856, "secs": 37.8}
+{"task": "c3_nomao", "variant": "arf20", "seed": 501, "acc": 0.9367, "pJ_answer": 8281214.692000633, "pJ_update": 12604873.856, "secs": 37.5}
+{"task": "c3_nomao", "variant": "arf20", "seed": 502, "acc": 0.9346, "pJ_answer": 8281076.38200061, "pJ_update": 12604873.856, "secs": 39.0}

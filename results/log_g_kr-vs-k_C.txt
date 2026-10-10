@@ -1,0 +1,3 @@
+{"task": "c3_kr-vs-k", "variant": "arf20", "seed": 500, "acc": 0.232, "pJ_answer": 12805439.504998868, "pJ_update": 2506419.84, "secs": 59.6}
+{"task": "c3_kr-vs-k", "variant": "arf20", "seed": 501, "acc": 0.2459, "pJ_answer": 12805438.999999125, "pJ_update": 2506419.84, "secs": 63.7}
+{"task": "c3_kr-vs-k", "variant": "arf20", "seed": 502, "acc": 0.2466, "pJ_answer": 13669574.794499824, "pJ_update": 2676339.84, "secs": 61.7}

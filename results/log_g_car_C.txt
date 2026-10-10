@@ -1,0 +1,3 @@
+{"task": "c3_car", "variant": "arf20", "seed": 500, "acc": 0.7974537037037037, "pJ_answer": 180632.8403935164, "pJ_update": 135015.96296296295, "secs": 3.8}
+{"task": "c3_car", "variant": "arf20", "seed": 501, "acc": 0.7962962962962963, "pJ_answer": 180544.13807870212, "pJ_update": 135015.96296296295, "secs": 3.6}
+{"task": "c3_car", "variant": "arf20", "seed": 502, "acc": 0.8090277777777778, "pJ_answer": 145597.7241898181, "pJ_update": 107299.29629629629, "secs": 3.6}

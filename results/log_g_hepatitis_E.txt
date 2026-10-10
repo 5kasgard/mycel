@@ -1,0 +1,6 @@
+{"task": "c3_hepatitis", "variant": "thperc16", "seed": 500, "acc": 0.8193548387096774, "pJ_answer": 401.75741935483865, "pJ_update": 67.83806451612924, "secs": 0.0}
+{"task": "c3_hepatitis", "variant": "thlog", "seed": 500, "acc": 0.8193548387096774, "pJ_answer": 1267.8754838709679, "pJ_update": 1008.8438709677421, "secs": 0.0}
+{"task": "c3_hepatitis", "variant": "thperc16", "seed": 501, "acc": 0.7548387096774194, "pJ_answer": 401.7574193548387, "pJ_update": 89.20387096774219, "secs": 0.0}
+{"task": "c3_hepatitis", "variant": "thlog", "seed": 501, "acc": 0.8, "pJ_answer": 1267.8754838709674, "pJ_update": 1008.8438709677416, "secs": 0.0}
+{"task": "c3_hepatitis", "variant": "thperc16", "seed": 502, "acc": 0.7419354838709677, "pJ_answer": 401.75741935483893, "pJ_update": 94.67612903225834, "secs": 0.0}
+{"task": "c3_hepatitis", "variant": "thlog", "seed": 502, "acc": 0.8129032258064516, "pJ_answer": 1267.8754838709672, "pJ_update": 1008.8438709677416, "secs": 0.0}

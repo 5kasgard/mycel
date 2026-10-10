@@ -1,0 +1,6 @@
+{"task": "c3_balance", "variant": "hat", "seed": 500, "acc": 0.8416, "pJ_answer": 250.5, "pJ_update": 162.5, "secs": 0.0}
+{"task": "c3_balance", "variant": "arf5", "seed": 500, "acc": 0.7744, "pJ_answer": 1435.9239999999943, "pJ_update": 988.5888, "secs": 0.2}
+{"task": "c3_balance", "variant": "hat", "seed": 501, "acc": 0.8576, "pJ_answer": 250.5, "pJ_update": 162.5, "secs": 0.0}
+{"task": "c3_balance", "variant": "arf5", "seed": 501, "acc": 0.784, "pJ_answer": 1459.7599999999907, "pJ_update": 988.5888, "secs": 0.2}
+{"task": "c3_balance", "variant": "hat", "seed": 502, "acc": 0.8592, "pJ_answer": 250.5, "pJ_update": 162.5, "secs": 0.0}
+{"task": "c3_balance", "variant": "arf5", "seed": 502, "acc": 0.7696, "pJ_answer": 1439.9640000000081, "pJ_update": 988.5888, "secs": 0.2}

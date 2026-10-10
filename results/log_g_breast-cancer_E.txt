@@ -1,0 +1,6 @@
+{"task": "c3_breast-cancer", "variant": "thperc16", "seed": 500, "acc": 0.6293706293706294, "pJ_answer": 235.0968531468523, "pJ_update": 44.9447552447555, "secs": 0.1}
+{"task": "c3_breast-cancer", "variant": "thlog", "seed": 500, "acc": 0.7097902097902098, "pJ_answer": 566.7510489510491, "pJ_update": 311.0811188811189, "secs": 0.1}
+{"task": "c3_breast-cancer", "variant": "thperc16", "seed": 501, "acc": 0.583916083916084, "pJ_answer": 235.09685314685228, "pJ_update": 50.444055944056196, "secs": 0.1}
+{"task": "c3_breast-cancer", "variant": "thlog", "seed": 501, "acc": 0.6923076923076923, "pJ_answer": 566.7510489510491, "pJ_update": 311.081118881119, "secs": 0.1}
+{"task": "c3_breast-cancer", "variant": "thperc16", "seed": 502, "acc": 0.6258741258741258, "pJ_answer": 235.0968531468523, "pJ_update": 45.36678321678344, "secs": 0.1}
+{"task": "c3_breast-cancer", "variant": "thlog", "seed": 502, "acc": 0.7062937062937062, "pJ_answer": 566.7510489510491, "pJ_update": 311.0811188811189, "secs": 0.1}

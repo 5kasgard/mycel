@@ -1,0 +1,6 @@
+{"task": "c3_hepatitis", "variant": "mycelGc2", "seed": 500, "acc": 0.7741935483870968, "pJ_answer": 451.026451612903, "pJ_update": 344.3109677419341, "secs": 0.0}
+{"task": "c3_hepatitis", "variant": "mycelGc3", "seed": 500, "acc": 0.7741935483870968, "pJ_answer": 472.7999999999999, "pJ_update": 339.49290322580555, "secs": 0.0}
+{"task": "c3_hepatitis", "variant": "mycelGc2", "seed": 501, "acc": 0.7548387096774194, "pJ_answer": 452.5548387096773, "pJ_update": 370.8993548387081, "secs": 0.0}
+{"task": "c3_hepatitis", "variant": "mycelGc3", "seed": 501, "acc": 0.7806451612903226, "pJ_answer": 485.3483870967741, "pJ_update": 324.9767741935472, "secs": 0.0}
+{"task": "c3_hepatitis", "variant": "mycelGc2", "seed": 502, "acc": 0.7806451612903226, "pJ_answer": 455.3703225806454, "pJ_update": 332.1445161290307, "secs": 0.0}
+{"task": "c3_hepatitis", "variant": "mycelGc3", "seed": 502, "acc": 0.7677419354838709, "pJ_answer": 482.00967741935483, "pJ_update": 344.1019354838699, "secs": 0.0}

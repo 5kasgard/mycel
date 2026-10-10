@@ -1,0 +1,3 @@
+{"task": "c3_breast-cancer", "variant": "perc16", "seed": 500, "acc": 0.6293706293706294, "pJ_answer": 110.99685314685317, "pJ_update": 44.9447552447555, "secs": 0.0}
+{"task": "c3_breast-cancer", "variant": "perc16", "seed": 501, "acc": 0.583916083916084, "pJ_answer": 110.99685314685317, "pJ_update": 50.444055944056196, "secs": 0.0}
+{"task": "c3_breast-cancer", "variant": "perc16", "seed": 502, "acc": 0.6258741258741258, "pJ_answer": 110.99685314685317, "pJ_update": 45.36678321678344, "secs": 0.0}

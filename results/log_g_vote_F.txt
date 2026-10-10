@@ -1,0 +1,6 @@
+{"task": "c3_vote", "variant": "mycelGc2", "seed": 500, "acc": 0.9172413793103448, "pJ_answer": 313.9822988505748, "pJ_update": 61.71379310344771, "secs": 0.1}
+{"task": "c3_vote", "variant": "mycelGc3", "seed": 500, "acc": 0.9057471264367816, "pJ_answer": 382.717931034483, "pJ_update": 69.07563218390727, "secs": 0.1}
+{"task": "c3_vote", "variant": "mycelGc2", "seed": 501, "acc": 0.9218390804597701, "pJ_answer": 288.27655172413796, "pJ_update": 58.14091954022975, "secs": 0.1}
+{"task": "c3_vote", "variant": "mycelGc3", "seed": 501, "acc": 0.9195402298850575, "pJ_answer": 343.8760919540228, "pJ_update": 58.63172413793049, "secs": 0.1}
+{"task": "c3_vote", "variant": "mycelGc2", "seed": 502, "acc": 0.9195402298850575, "pJ_answer": 304.1225287356321, "pJ_update": 59.87931034482726, "secs": 0.1}
+{"task": "c3_vote", "variant": "mycelGc3", "seed": 502, "acc": 0.9172413793103448, "pJ_answer": 344.05931034482796, "pJ_update": 60.09126436781566, "secs": 0.1}

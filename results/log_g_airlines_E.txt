@@ -1,0 +1,6 @@
+{"task": "c3_airlines", "variant": "thperc16", "seed": 500, "acc": 0.5579, "pJ_answer": 423.1530399999913, "pJ_update": 79.1521699999861, "secs": 3.4}
+{"task": "c3_airlines", "variant": "thlog", "seed": 500, "acc": 0.5884, "pJ_answer": 1045.8235200001072, "pJ_update": 488.08768000000117, "secs": 3.0}
+{"task": "c3_airlines", "variant": "thperc16", "seed": 501, "acc": 0.5511, "pJ_answer": 424.52022999998974, "pJ_update": 82.05359999998547, "secs": 3.3}
+{"task": "c3_airlines", "variant": "thlog", "seed": 501, "acc": 0.5843, "pJ_answer": 1052.2947400001085, "pJ_update": 496.02715999999754, "secs": 3.0}
+{"task": "c3_airlines", "variant": "thperc16", "seed": 502, "acc": 0.5668, "pJ_answer": 423.03996999999134, "pJ_update": 77.66783999998589, "secs": 3.3}
+{"task": "c3_airlines", "variant": "thlog", "seed": 502, "acc": 0.5974, "pJ_answer": 1045.3308600001074, "pJ_update": 487.4832400000029, "secs": 3.0}

@@ -1,0 +1,3 @@
+{"task": "c3_mfeat-pixel", "variant": "perc16", "seed": 500, "acc": 0.8855, "pJ_answer": 6881.9275, "pJ_update": 278.7806, "secs": 0.1}
+{"task": "c3_mfeat-pixel", "variant": "perc16", "seed": 501, "acc": 0.8845, "pJ_answer": 6876.7, "pJ_update": 281.0836999999999, "secs": 0.1}
+{"task": "c3_mfeat-pixel", "variant": "perc16", "seed": 502, "acc": 0.887, "pJ_answer": 6890.69375, "pJ_update": 275.7283499999997, "secs": 0.1}

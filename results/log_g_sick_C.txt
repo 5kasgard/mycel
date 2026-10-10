@@ -1,0 +1,3 @@
+{"task": "c3_sick", "variant": "arf20", "seed": 500, "acc": 0.9520148462354189, "pJ_answer": 231666.86102862217, "pJ_update": 334602.347826087, "secs": 5.3}
+{"task": "c3_sick", "variant": "arf20", "seed": 501, "acc": 0.9506892895015907, "pJ_answer": 231972.9064687159, "pJ_update": 334602.347826087, "secs": 5.2}
+{"task": "c3_sick", "variant": "arf20", "seed": 502, "acc": 0.9589077412513256, "pJ_answer": 231894.2630434899, "pJ_update": 334602.347826087, "secs": 5.1}

@@ -1,0 +1,3 @@
+{"task": "c3_hepatitis", "variant": "perc16", "seed": 500, "acc": 0.7870967741935484, "pJ_answer": 142.4451612903228, "pJ_update": 42.56903225806464, "secs": 0.0}
+{"task": "c3_hepatitis", "variant": "perc16", "seed": 501, "acc": 0.7548387096774194, "pJ_answer": 142.44516129032274, "pJ_update": 49.085806451613074, "secs": 0.0}
+{"task": "c3_hepatitis", "variant": "perc16", "seed": 502, "acc": 0.7935483870967742, "pJ_answer": 142.44516129032272, "pJ_update": 41.26709677419361, "secs": 0.0}

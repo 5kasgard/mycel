@@ -1,0 +1,3 @@
+{"task": "c3_jasmine", "variant": "perc16", "seed": 500, "acc": 0.7054289544235925, "pJ_answer": 1046.4670576407125, "pJ_update": 405.1293900804278, "secs": 0.1}
+{"task": "c3_jasmine", "variant": "perc16", "seed": 501, "acc": 0.6987265415549598, "pJ_answer": 1056.6159182305628, "pJ_update": 425.5619302949114, "secs": 0.1}
+{"task": "c3_jasmine", "variant": "perc16", "seed": 502, "acc": 0.7064343163538874, "pJ_answer": 1066.2755697051346, "pJ_update": 415.3100871313688, "secs": 0.1}

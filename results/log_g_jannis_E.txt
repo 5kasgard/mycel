@@ -1,0 +1,6 @@
+{"task": "c3_jannis", "variant": "thperc16", "seed": 500, "acc": 0.5358, "pJ_answer": 3396.6334999999976, "pJ_update": 1030.6544199999648, "secs": 3.3}
+{"task": "c3_jannis", "variant": "thlog", "seed": 500, "acc": 0.5342, "pJ_answer": 12088.227500002062, "pJ_update": 12656.882000000007, "secs": 2.9}
+{"task": "c3_jannis", "variant": "thperc16", "seed": 501, "acc": 0.5397, "pJ_answer": 3426.166579999989, "pJ_update": 1036.3375299999545, "secs": 3.2}
+{"task": "c3_jannis", "variant": "thlog", "seed": 501, "acc": 0.5433, "pJ_answer": 12212.729700002104, "pJ_update": 12825.973360000022, "secs": 2.9}
+{"task": "c3_jannis", "variant": "thperc16", "seed": 502, "acc": 0.5457, "pJ_answer": 3400.4932200005455, "pJ_update": 1012.9764399999731, "secs": 3.2}
+{"task": "c3_jannis", "variant": "thlog", "seed": 502, "acc": 0.5504, "pJ_answer": 12114.1773, "pJ_update": 12678.40823999997, "secs": 2.9}

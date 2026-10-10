@@ -1,0 +1,3 @@
+{"task": "c3_shuttle", "variant": "arf20", "seed": 500, "acc": 0.9954, "pJ_answer": 133897.27149999508, "pJ_update": 59814.784, "secs": 10.0}
+{"task": "c3_shuttle", "variant": "arf20", "seed": 501, "acc": 0.9942, "pJ_answer": 133823.38999999966, "pJ_update": 59814.784, "secs": 10.2}
+{"task": "c3_shuttle", "variant": "arf20", "seed": 502, "acc": 0.995, "pJ_answer": 138413.12200000507, "pJ_update": 61967.584, "secs": 9.8}

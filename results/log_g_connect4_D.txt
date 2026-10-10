@@ -1,0 +1,3 @@
+{"task": "c3_connect4", "variant": "perc16", "seed": 500, "acc": 0.6366, "pJ_answer": 455.9478400000834, "pJ_update": 146.9290999999938, "secs": 0.5}
+{"task": "c3_connect4", "variant": "perc16", "seed": 501, "acc": 0.6382, "pJ_answer": 446.2510699999202, "pJ_update": 146.27937999997368, "secs": 0.5}
+{"task": "c3_connect4", "variant": "perc16", "seed": 502, "acc": 0.6313, "pJ_answer": 465.98493000002105, "pJ_update": 149.2769699999777, "secs": 0.5}

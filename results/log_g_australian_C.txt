@@ -1,0 +1,3 @@
+{"task": "c3_australian", "variant": "arf20", "seed": 500, "acc": 0.855072463768116, "pJ_answer": 174519.58550724442, "pJ_update": 251673.14782608696, "secs": 1.0}
+{"task": "c3_australian", "variant": "arf20", "seed": 501, "acc": 0.8463768115942029, "pJ_answer": 174482.55217391576, "pJ_update": 251673.14782608696, "secs": 1.2}
+{"task": "c3_australian", "variant": "arf20", "seed": 502, "acc": 0.8492753623188406, "pJ_answer": 174611.21739130464, "pJ_update": 251673.14782608696, "secs": 1.0}

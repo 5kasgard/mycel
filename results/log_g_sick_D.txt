@@ -1,0 +1,3 @@
+{"task": "c3_sick", "variant": "perc16", "seed": 500, "acc": 0.940880169671262, "pJ_answer": 212.91937963943477, "pJ_update": 16.82295864262887, "secs": 0.1}
+{"task": "c3_sick", "variant": "perc16", "seed": 501, "acc": 0.9390243902439024, "pJ_answer": 213.3578738069851, "pJ_update": 17.347534464473917, "secs": 0.1}
+{"task": "c3_sick", "variant": "perc16", "seed": 502, "acc": 0.9387592788971368, "pJ_answer": 203.61940615059643, "pJ_update": 17.09231177094269, "secs": 0.1}
