@@ -1,0 +1,3 @@
+{"task": "c2_dna", "variant": "arf20", "seed": 400, "acc": 0.8618957940991839, "pJ_answer": 24213113.00251024, "pJ_update": 24822389.15254237, "secs": 23.5}
+{"task": "c2_dna", "variant": "arf20", "seed": 401, "acc": 0.8505963590709353, "pJ_answer": 24213558.01337227, "pJ_update": 24822389.15254237, "secs": 22.4}
+{"task": "c2_dna", "variant": "arf20", "seed": 402, "acc": 0.8656622724419335, "pJ_answer": 24213087.88079105, "pJ_update": 24822389.15254237, "secs": 22.3}

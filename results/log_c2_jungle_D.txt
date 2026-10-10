@@ -1,0 +1,3 @@
+{"task": "c2_jungle", "variant": "perc16", "seed": 400, "acc": 0.5714, "pJ_answer": 74.65000000001366, "pJ_update": 34.738020000005534, "secs": 0.2}
+{"task": "c2_jungle", "variant": "perc16", "seed": 401, "acc": 0.569, "pJ_answer": 70.20165000001306, "pJ_update": 34.81782000000407, "secs": 0.2}
+{"task": "c2_jungle", "variant": "perc16", "seed": 402, "acc": 0.5766, "pJ_answer": 72.09795000001331, "pJ_update": 34.30860000000443, "secs": 0.2}

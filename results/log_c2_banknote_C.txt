@@ -1,0 +1,3 @@
+{"task": "c2_banknote", "variant": "arf20", "seed": 400, "acc": 0.9664723032069971, "pJ_answer": 5077.976530612394, "pJ_update": 4957.655976676385, "secs": 2.0}
+{"task": "c2_banknote", "variant": "arf20", "seed": 401, "acc": 0.9686588921282799, "pJ_answer": 5036.678425656061, "pJ_update": 4957.655976676385, "secs": 2.0}
+{"task": "c2_banknote", "variant": "arf20", "seed": 402, "acc": 0.978134110787172, "pJ_answer": 5171.291107871842, "pJ_update": 4957.655976676385, "secs": 2.0}

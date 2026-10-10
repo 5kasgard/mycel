@@ -1,0 +1,6 @@
+{"task": "c2_hill-valley", "variant": "hat", "seed": 400, "acc": 0.4892739273927393, "pJ_answer": 3980.1000000000085, "pJ_update": 4045.0, "secs": 0.6}
+{"task": "c2_hill-valley", "variant": "arf5", "seed": 400, "acc": 0.514026402640264, "pJ_answer": 76513.53300330033, "pJ_update": 108075.9405940594, "secs": 1.1}
+{"task": "c2_hill-valley", "variant": "hat", "seed": 401, "acc": 0.4892739273927393, "pJ_answer": 3980.1000000000085, "pJ_update": 4045.0, "secs": 0.4}
+{"task": "c2_hill-valley", "variant": "arf5", "seed": 401, "acc": 0.5181518151815182, "pJ_answer": 76509.99966996648, "pJ_update": 108075.9405940594, "secs": 1.1}
+{"task": "c2_hill-valley", "variant": "hat", "seed": 402, "acc": 0.5214521452145214, "pJ_answer": 3980.1000000000085, "pJ_update": 4045.0, "secs": 0.7}
+{"task": "c2_hill-valley", "variant": "arf5", "seed": 402, "acc": 0.4991749174917492, "pJ_answer": 76512.89966996707, "pJ_update": 108075.9405940594, "secs": 1.1}

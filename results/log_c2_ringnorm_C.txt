@@ -1,0 +1,3 @@
+{"task": "c2_ringnorm", "variant": "arf20", "seed": 400, "acc": 0.9375675675675675, "pJ_answer": 341898.92500000296, "pJ_update": 497559.82702702703, "secs": 16.0}
+{"task": "c2_ringnorm", "variant": "arf20", "seed": 401, "acc": 0.9377027027027027, "pJ_answer": 143744.85878378578, "pJ_update": 199830.0972972973, "secs": 16.9}
+{"task": "c2_ringnorm", "variant": "arf20", "seed": 402, "acc": 0.94, "pJ_answer": 89470.75945945314, "pJ_update": 120237.01621621622, "secs": 16.1}

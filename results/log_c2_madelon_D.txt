@@ -1,0 +1,3 @@
+{"task": "c2_madelon", "variant": "perc16", "seed": 400, "acc": 0.54, "pJ_answer": 3313.1153846152256, "pJ_update": 2271.5985384614746, "secs": 0.2}
+{"task": "c2_madelon", "variant": "perc16", "seed": 401, "acc": 0.5226923076923077, "pJ_answer": 3317.952692307533, "pJ_update": 2361.7967692306997, "secs": 0.2}
+{"task": "c2_madelon", "variant": "perc16", "seed": 402, "acc": 0.5323076923076923, "pJ_answer": 3308.8584615383024, "pJ_update": 2305.611653846098, "secs": 0.2}

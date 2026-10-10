@@ -1,0 +1,6 @@
+{"task": "c2_dna", "variant": "hat", "seed": 400, "acc": 0.8775894538606404, "pJ_answer": 31996.099999998656, "pJ_update": 25506.0, "secs": 6.8}
+{"task": "c2_dna", "variant": "arf5", "seed": 400, "acc": 0.7354048964218456, "pJ_answer": 4019602.680037528, "pJ_update": 4110682.033898305, "secs": 4.3}
+{"task": "c2_dna", "variant": "hat", "seed": 401, "acc": 0.8593848085373509, "pJ_answer": 31996.099999998656, "pJ_update": 25506.0, "secs": 6.9}
+{"task": "c2_dna", "variant": "arf5", "seed": 401, "acc": 0.7664783427495292, "pJ_answer": 4019633.7218456645, "pJ_update": 4110682.033898305, "secs": 4.3}
+{"task": "c2_dna", "variant": "hat", "seed": 402, "acc": 0.8691148775894538, "pJ_answer": 31996.099999998656, "pJ_update": 25506.0, "secs": 7.0}
+{"task": "c2_dna", "variant": "arf5", "seed": 402, "acc": 0.7335216572504708, "pJ_answer": 4019596.561707509, "pJ_update": 4110682.033898305, "secs": 4.2}

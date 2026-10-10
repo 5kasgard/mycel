@@ -1,0 +1,3 @@
+{"task": "c2_credit-approval", "variant": "perc16", "seed": 400, "acc": 0.7985507246376812, "pJ_answer": 143.6765217391304, "pJ_update": 32.4756521739129, "secs": 0.0}
+{"task": "c2_credit-approval", "variant": "perc16", "seed": 401, "acc": 0.7739130434782608, "pJ_answer": 143.738115942029, "pJ_update": 36.45811594202848, "secs": 0.0}
+{"task": "c2_credit-approval", "variant": "perc16", "seed": 402, "acc": 0.7971014492753623, "pJ_answer": 143.68956521739128, "pJ_update": 32.65188405797067, "secs": 0.0}

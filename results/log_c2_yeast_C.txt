@@ -1,0 +1,3 @@
+{"task": "c2_yeast", "variant": "arf20", "seed": 400, "acc": 0.5269541778975741, "pJ_answer": 132218.06778975937, "pJ_update": 40932.6576819407, "secs": 4.6}
+{"task": "c2_yeast", "variant": "arf20", "seed": 401, "acc": 0.5518867924528302, "pJ_answer": 171225.8351752007, "pJ_update": 53741.28301886792, "secs": 4.1}
+{"task": "c2_yeast", "variant": "arf20", "seed": 402, "acc": 0.5074123989218329, "pJ_answer": 170969.40134771186, "pJ_update": 53741.28301886792, "secs": 4.4}

@@ -1,0 +1,3 @@
+{"task": "c2_mozilla4", "variant": "perc16", "seed": 400, "acc": 0.7354, "pJ_answer": 41.82185000000146, "pJ_update": 21.173640000004077, "secs": 0.2}
+{"task": "c2_mozilla4", "variant": "perc16", "seed": 401, "acc": 0.7468, "pJ_answer": 41.849750000001514, "pJ_update": 20.227420000004226, "secs": 0.2}
+{"task": "c2_mozilla4", "variant": "perc16", "seed": 402, "acc": 0.7446, "pJ_answer": 41.86323000000163, "pJ_update": 20.44886000000417, "secs": 0.2}

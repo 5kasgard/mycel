@@ -1,0 +1,3 @@
+{"task": "c2_steel-bin", "variant": "arf20", "seed": 400, "acc": 0.9489953632148377, "pJ_answer": 142852.6030396701, "pJ_update": 207114.8696548171, "secs": 2.6}
+{"task": "c2_steel-bin", "variant": "arf20", "seed": 401, "acc": 0.9428129829984544, "pJ_answer": 142819.63364245405, "pJ_update": 207114.8696548171, "secs": 2.6}
+{"task": "c2_steel-bin", "variant": "arf20", "seed": 402, "acc": 0.9459041731066461, "pJ_answer": 118384.23951571432, "pJ_update": 169286.1215868109, "secs": 2.7}

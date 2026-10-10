@@ -1,0 +1,3 @@
+{"task": "c2_climate", "variant": "perc16", "seed": 400, "acc": 0.8388888888888889, "pJ_answer": 144.43333333333342, "pJ_update": 35.68648148148151, "secs": 0.0}
+{"task": "c2_climate", "variant": "perc16", "seed": 401, "acc": 0.8333333333333334, "pJ_answer": 147.02500000000015, "pJ_update": 39.11277777777763, "secs": 0.0}
+{"task": "c2_climate", "variant": "perc16", "seed": 402, "acc": 0.8666666666666667, "pJ_answer": 144.39814814814824, "pJ_update": 29.927592592592895, "secs": 0.0}

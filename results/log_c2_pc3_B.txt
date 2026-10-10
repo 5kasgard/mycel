@@ -1,0 +1,1 @@
+LOAD FAILED c2_pc3 400 URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)'))

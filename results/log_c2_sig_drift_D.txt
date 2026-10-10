@@ -1,0 +1,3 @@
+{"task": "c2_sig_drift", "variant": "perc16", "seed": 400, "acc": 0.8056, "pJ_answer": 112.02164999999053, "pJ_update": 35.12923999999838, "secs": 0.4}
+{"task": "c2_sig_drift", "variant": "perc16", "seed": 401, "acc": 0.7971, "pJ_answer": 111.99769999999064, "pJ_update": 36.92986999999621, "secs": 0.4}
+{"task": "c2_sig_drift", "variant": "perc16", "seed": 402, "acc": 0.8198, "pJ_answer": 109.98339999998866, "pJ_update": 31.784080000000255, "secs": 0.4}

@@ -1,0 +1,3 @@
+{"task": "c2_first-order", "variant": "arf20", "seed": 400, "acc": 0.4496567505720824, "pJ_answer": 1411286.2925793172, "pJ_update": 735430.9414841451, "secs": 20.4}
+{"task": "c2_first-order", "variant": "arf20", "seed": 401, "acc": 0.4535796011768552, "pJ_answer": 2011533.324713993, "pJ_update": 1055496.322327558, "secs": 20.7}
+{"task": "c2_first-order", "variant": "arf20", "seed": 402, "acc": 0.4408303367113436, "pJ_answer": 1411205.0105263356, "pJ_update": 735430.9414841451, "secs": 21.4}

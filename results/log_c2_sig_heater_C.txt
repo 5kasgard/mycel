@@ -1,0 +1,3 @@
+{"task": "c2_sig_heater", "variant": "arf20", "seed": 400, "acc": 0.988, "pJ_answer": 43727.929999997876, "pJ_update": 60370.4128, "secs": 13.2}
+{"task": "c2_sig_heater", "variant": "arf20", "seed": 401, "acc": 0.9867, "pJ_answer": 60242.35500000165, "pJ_update": 85340.0128, "secs": 15.3}
+{"task": "c2_sig_heater", "variant": "arf20", "seed": 402, "acc": 0.9866, "pJ_answer": 39611.36000000335, "pJ_update": 53997.7792, "secs": 14.1}

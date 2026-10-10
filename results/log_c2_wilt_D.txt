@@ -1,0 +1,3 @@
+{"task": "c2_wilt", "variant": "perc16", "seed": 400, "acc": 0.9227113039884274, "pJ_answer": 42.38166976648431, "pJ_update": 6.303575118825515, "secs": 0.1}
+{"task": "c2_wilt", "variant": "perc16", "seed": 401, "acc": 0.9260177722669973, "pJ_answer": 42.45668526555437, "pJ_update": 6.053812771233181, "secs": 0.1}
+{"task": "c2_wilt", "variant": "perc16", "seed": 402, "acc": 0.9251911551973548, "pJ_answer": 42.36503409795775, "pJ_update": 6.0952262864221805, "secs": 0.1}
